@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="baidu-site-verification" content="h8pv47Sk7l"/>
+    <meta name="description" content="5月28日中午，携程旅行网官方网站突然陷入瘫痪，打开主页后点击子目录时，均显示“Service Unavailable”，而百度搜索上的携程官方页面也显示“404错误”。">
+    <meta name="Keywords" content="翼道，安全，快捷，登录，数字证书，数字认证、电子签名，账号保护，忘记密码，账号被盗，密码保护，优惠资讯，折扣，打折，优惠券，特价，特惠，ca证书，店家免费推广平台，身份认证，一号登陆">
+    <meta name="alexaVerifyID" content="DHHEgBVu9XBrMMC2TEp1RAsrVFs"/>
+
+    <title>携程网被黑，信用卡数据丢失成最大隐忧 | 翼道网络</title>
+
+    <link type="image/x-icon" rel='icon' href="/images/common/favicon.ico">
+    <link rel="stylesheet" href="/css/drawer.css">
+    <link rel='stylesheet' href="/css/style.css">
+    <link rel='stylesheet' href="/css/add.css">
+    <link rel='stylesheet' href="/css/slider.css">
+    <link rel="canonical" href="http://127.0.0.1:4000/industry/2015/06/02/20150602.html">
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml" />
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="/css/css640.css" />
+    <style>
+       @media screen and (min-width: 640px) and (max-width: 1170px) {
+           .usage-main .register-page p{width: 60%;margin: auto;}
+           .job_word p {background-size: 8% !important;}
+           .qualifications a{ margin-left: 6%;margin-bottom: 20px; width: 25%;}
+           .entry-content .down1{background-size:40% !important; }
+           .entry-content .down1 .text .w{text-align: center;}
+        }
+    </style>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+
+    <script src="/js/slider-jquery.min.js"></script>
+    <script src="/js/slider.js"></script>
+    <!-- Vendor js --->
+    <script src="/js/nav/iscroll-min.js"></script>
+    <script src="/js/nav/dropdown.min.js"></script>
+
+    <!-- drawer js -->
+    <script src="/js/nav/jquery.drawer.js"></script>
+
+    <!--/****百度统计异步代码***-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?34b90c82b231a77b6cef1c285415f38c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*-微信弹窗--->*/
+            $(".weixin-er").hide();
+            $(".weixin").mouseover(function () {
+                $(".weixin-er").show();
+            });
+            $(".weixin").mouseout(function () {
+                $(".weixin-er").hide();
+            });
+            $(".weixin-er").mouseover(function () {
+                $(".weixin-er").show();
+            });
+            $(".weixin-er").mouseout(function () {
+                $(".weixin-er").hide();
+            });
+
+            /*******二维码弹窗***/
+            $("#register_btn").click(function () {
+                $("#tips_window").show();
+            });
+
+            /***关闭弹窗***/
+            $(".close").click(function () {
+                $(".back-window").hide();
+            });
+
+        });
+    </script>
+
+</head>
+
+
+
+  <body class="drawer drawer-left drawer-navbar site-base">
+
+    <header role="banner">
+    <div class="drawer-header">
+        <span class="hide">翼道网络</span>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+    </div>
+    <div class="drawer-main drawer-navbar-default">
+        <nav class="container drawer-nav" role="navigation">
+            <div class="drawer-brand">
+                <a href="/"><img src="/images/common/edao_logo.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。" /></a>
+            </div>
+
+            <div class="drawer-menu-item dropdown drawer-dropdown top-user-bar mobile-none">
+                <a href="#" class="user-icon" data-toggle="dropdown" role="button" aria-expanded="false"><img src="/images/common/log-default-avatar.png"></a>
+                <ul class="drawer-submenu dropdown-menu" role="menu">
+                    <li><a id="register_btn" href="javascript:;">注册</a></li>
+                    <li><a href="https://sys.edaotech.com/es/login_c" target="_blank">企业登录</a></li>
+                    <li><a href="https://sys.edaotech.com/es/login_p" target="_blank">个人登录</a></li>
+                </ul>
+            </div>
+
+            <ul class="drawer-menu">
+                <li class="drawer-menu-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="drawer-menu-item dropdown drawer-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false">翼道APP <span class="caret"></span></a>
+                    <ul class="drawer-submenu dropdown-menu" role="menu">
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp1">翼道iKey简介</a></li>
+                        <li class="drawer-submenu-item"><a href="/download.html">下载列表</a></li>
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp2">可以干啥</a></li>
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp3">功能特性</a></li>
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp4">操作说明</a></li>
+                        <li class="drawer-submenu-item"><a href="/usage.html">使用说明</a></li>
+                    </ul>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="http://ent.edaotech.com" target="_blank">政企版</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="/fbfav.html">发布占便宜</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="/sqrk.html">开发平台</a>
+                </li>
+                <li class="drawer-menu-item dropdown drawer-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false">关于翼道 <span class="caret"></span></a>
+                    <ul class="drawer-submenu dropdown-menu" role="menu">
+                        <li class="drawer-submenu-item"><a href="/about-us.html#ab1">公司简介</a></li>
+                        <li class="drawer-submenu-item"><a href="/news.html">新闻动态</a></li>
+                        <li class="drawer-submenu-item"><a href="/qualifications.html">公司资质</a></li>
+                        <li class="drawer-submenu-item"><a href="/about-us.html#ab3">联系我们</a></li>
+                        <li class="drawer-submenu-item"><a href="/about-us.html#ab4">招兵买马</a></li>
+                    </ul>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="https://safe.edaotech.com/" target="_blank">紧急通道</a>
+                </li>
+            </ul>
+
+            <div class="drawer-footer">
+                <span></span>
+            </div>
+            <div class="clear"></div>
+        </nav>
+    </div>
+    <!-- /.drawer-main -->
+</header>
+<!-- /.site-header -->
+
+<script>
+
+    $(document).ready(function(){
+        $('.drawer').drawer();
+    });
+
+
+</script>
+
+<div class="main">
+
+    <div class="page-content">
+      <div class="wrapper">
+        <style>
+    .top-block{border-bottom: 2px solid #d62033;}
+</style>
+<div class="type-post">
+    <div class="container">
+        <div id="loop" class="loop-posts">
+            <div class="post-container">
+
+              <header class="post-header">
+                <h1 class="post-title">携程网被黑，信用卡数据丢失成最大隐忧</h1>
+                <p class="post-meta">2015年06月2日</p>
+              </header>
+
+              <div class="content entry-content post-conter">
+                <p>5月28日中午，携程旅行网官方网站突然陷入瘫痪，打开主页后点击子目录时，均显示“Service Unavailable”，而百度搜索上的携程官方页面也显示“404错误”。
+<!--more-->
+截至下午3时，携程网主页可以打开，提示“携程网暂时无法提供服务，正在紧急修复中，您可以访问艺龙旅行网”。</p>
+
+<p>对于网传的酒店数据库遭到物理删除的说法，携程官方回应称，经过紧急排查，携程数据没有丢失，预订数据也保存完整。</p>
+
+<p style="text-indent: 0;">
+	<img src="/assets/uploads/2015/2015-06-02-20150602/QQscreenshot20150602100119.jpg" alt="" />
+</p>
+
+<p><strong>内部人作祟？黑客攻击？</strong></p>
+
+<p>新浪微博有自称在携程的用户表示，现在的情况是所有节点上的业务代码都被干掉了。业务部门那边都在忙部署。周围同事也觉得诡异，因为发布日志都没了，具体原因还在查，个人猜测是有人内部报复。也有说法称是遭到离职员工报复。</p>
+
+<p>上述说法没有得到携程官方证实。微博显示为携程无线开发总监陈浩然的用户称，不要和外面乱说，就说在恢复中，数据一切安全。</p>
+
+<p>九个头条就此咨询一位网络安全专家，该专家表示，数据库有可能被删除，不过它肯定有备份，这不是主要问题。主要是里面存有消费过的用户的信用卡信息。如果真的是被攻击，攻击者可直接伪造信用卡花别人的钱。同时也是携程网用户的该专家表示，此前携程网已经被攻击过一次，他因此被迫换卡。</p>
+
+<p>就在不久前，携程刚刚宣布投资4亿美元获得艺龙37.6%的股权，并获得美国在线旅游企业Priceline集团2.5亿美元的进一步投资。此前，携程还和百度旗下“去哪儿”传出合并消息，但是最终谈判计划搁浅。</p>
+
+<p>记者在某美股群内部看到，群友纷纷讨论起今晚的携程股价，有人表示今晚要清仓。</p>
+
+<p><strong>携程服务差遭吐槽习以为常</strong></p>
+
+<p>上述说法没有得到携程官方证实。微博显示为携程无线开发总监陈浩然的用户称，不要和外面乱说，就说在恢复中，数据一切安全。</p>
+
+<p>目前尚无法得知故障由何种原因引发。有业内人士表示，如果真的是内部人搞破坏，说明携程内部管控出现了严重问题。</p>
+
+<p>实际上，不少用过携程服务的客户也对携程的服务啧有烦言。登陆天涯论坛可以看到不少吐槽携程服务态度差的投诉。</p>
+
+<p>如某位携程会员称，5月22日在携程网用积分申请兑换礼品，一直没有兑换成功，5月25日来电告知因为该会员积分无效所以无法兑换。另有一位用户表示，此前通过携程网预订了一家7天连锁酒店，在携程看到的房价是137元一晚，并可以参加返现活动，但后来登陆自己的携程账号，发现没有返现金额提取。联系客服人员后，该服务员解释，虽然其有资格参与返现，但因为在下订单时没有点击“我要返现”，后果由自己承担。</p>
+
+<p>类似携程租车、订房、出游等服务中问题频发。有业内人士称，整个在线旅游服务质量都一般。近日，中国青年报社会调查中心通过民意中国网和问卷网对1512人进行的一项调查显示，74.3%的受访者有过网上预订旅游的经验。但71.2%的受访者直言旅游网站的服务一般或很差。受访者最常遇到的服务问题有：旅游产品与合同承诺不符、旅游行程缩水、退费条款苛刻。</p>
+
+<p><strong>互联网的黑五月</strong></p>
+
+<p>值得注意的是，近日多家互联网企业遇到故障。</p>
+
+<p>5月11日，网易曾遭到攻击，部分业务无法使用。5月27日，支付宝光纤被挖导致系统瘫痪。折800也曾遇到故障。</p>
+
+<p>据新浪科技报道，按照携程一季度财报公布的数据，携程宕机的损失为每小时106万美元。</p>
+
+<p>商业领域已经成为信息泄露的“重灾区”。有媒体报道，目前网站攻击与漏洞利用正向规模化发展，并已形成庞大的黑色产业链条，其中围绕商业信息泄露，通信、电商、游戏、社交平台、金融机构以及能源、资源、航空等领域都成为爆发信息安全事件的“重灾区”，商业信息窃取已逐步威胁到产业安全。</p>
+
+                  <div class="bshare-custom">
+                      <div class="bsPromo bsPromo2"></div>
+                      <a title="分享到QQ空间" class="bshare-qzone"></a>
+                      <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                      <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a>
+                      <a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a>
+                      <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                      <span style="float: none;" class="BSHARE_COUNT bshare-share-count">30.4K</span>
+                  </div>
+                  <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+                  <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+              </div>
+
+            </div>
+        </div>
+        <div id="sidebar" class="sidebar-container mobile-none">
+    <div class="widget widget_categories">
+        <h2 class="widgettitle">分类</h2>
+        <ul>
+            
+            <li class="cat-item cat-item-10">
+                <a href="/category/official-dynamic/" onclick="location='/category/official-dynamic/'">
+                    <strong>官方动态</strong>
+                </a>
+            </li>
+            
+            <li class="cat-item cat-item-10">
+                <a href="/category/media-reports/" onclick="location='/category/media-reports/'">
+                    <strong>媒体报道</strong>
+                </a>
+            </li>
+            
+            <li class="cat-item cat-item-10">
+                <a href="/category/industry/" onclick="location='/category/industry/'">
+                    <strong>行业资讯</strong>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="widget widget_categories">
+        <h2 class="widgettitle">归档</h2>
+        <ul>
+            
+            
+            <li><a href="/2015/09/">2015年09月</a></li>
+            
+            
+              
+            
+            <li><a href="/2015/06/">2015年06月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2015/05/">2015年05月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2015/04/">2015年04月</a></li> 
+            
+            
+              
+            
+            <li><a href="/2015/03/">2015年03月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/12/">2014年12月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/11/">2014年11月</a></li> 
+            
+            
+              
+            
+            <li><a href="/2014/10/">2014年10月</a></li> 
+            
+            
+              
+            
+            <li><a href="/2014/09/">2014年09月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/06/">2014年06月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/05/">2014年05月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/04/">2014年04月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/03/">2014年03月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/02/">2014年02月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/01/">2014年01月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2013/12/">2013年12月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="footer">
+    <div class="pointer"></div>
+    <div class="container">
+        <div class="links">
+            <ul class="widgets">
+                <li><a href="/">首页</a></li>
+                <li><a href="/edaoikey.html">产品介绍</a></li>
+                <li><a href="https://safe.edaotech.com/">账号安全</a></li>
+                <li><a href="/usage.html">使用说明</a></li>
+                <li><a href="/usage.html#cp2">FAQ</a></li>
+                <li><a href="/download.html">下载列表</a></li>
+                <li><a href="/about-us.html">关于翼道</a></li>
+                <li><a href="/about-us.html#ab3">联系我们</a></li>
+                <li><a href="/about-us.html#ab4">招兵买马</a></li>
+                <!--------后台调用footer，模板更新后无此操作------>
+            </ul>
+        </div>
+        <div class="bquan fr">
+            <div class="sj-links"><div class="wei-block"><strong class="weixin-er"></strong><span class="weixin"></span></div><a target="_blank" href="http://weibo.com/u/3482431031"><span class="weibo"></span></a></div>
+            <div style="line-height:22px; font-size:12px;" class="text"><span>Copyright &copy;2013 edaotech.com </span><a target="_blank" href="http://www.miit.gov.cn" style="color:#999;">粤ICP备13038482号</a></div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!--------注册------->
+<div style="width:200px; height:200px;" id="tips_window" class="back-window">
+    <div id="back"></div>
+
+    <div class="aq_comm_frame">
+        <div class="comm_block">
+            <div class="close"></div>
+            <div class="r_top"></div>
+            <div class="r_center">
+
+                <p align="center" style="padding:20px 0; font-size:18px;">翼道的注册是通过翼道APP完成，请扫描下载</p>
+                <p align="center" style="padding-bottom:20px;">
+                    <img style="margin-right:20px;" width="180" src="/images/common/qrcode.png" />
+                    <img style="margin-left:20px;" width="180" src="/images/common/ios_qd.png">
+                </p>
+
+            </div>
+            <div class="r_bottom"></div>
+        </div>
+    </div>
+
+</div>
+<!--百度访问分析代码-->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F34b90c82b231a77b6cef1c285415f38c' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" src="/js/add.js"></script>
+
+  </body>
+
+</html>

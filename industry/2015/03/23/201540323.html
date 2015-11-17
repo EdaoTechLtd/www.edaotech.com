@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="baidu-site-verification" content="h8pv47Sk7l"/>
+    <meta name="description" content="移动互联网让网络变得无处不在，也在每个人背后增加了许多窥视的眼睛。用户的身份、位置、银行账号……所有这些敏感信息都可以被各形各色的采集者获取，而且大多是合法的。合法获取与滥用、泄漏的风险并不矛盾，在大数据时代，个人信息保护遇到了困境。">
+    <meta name="Keywords" content="翼道，安全，快捷，登录，数字证书，数字认证、电子签名，账号保护，忘记密码，账号被盗，密码保护，优惠资讯，折扣，打折，优惠券，特价，特惠，ca证书，店家免费推广平台，身份认证，一号登陆">
+    <meta name="alexaVerifyID" content="DHHEgBVu9XBrMMC2TEp1RAsrVFs"/>
+
+    <title>大数据时代“眼睛”无处不在，想保护个人信息？难！ | 翼道网络</title>
+
+    <link type="image/x-icon" rel='icon' href="/images/common/favicon.ico">
+    <link rel="stylesheet" href="/css/drawer.css">
+    <link rel='stylesheet' href="/css/style.css">
+    <link rel='stylesheet' href="/css/add.css">
+    <link rel='stylesheet' href="/css/slider.css">
+    <link rel="canonical" href="http://127.0.0.1:4000/industry/2015/03/23/201540323.html">
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml" />
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="/css/css640.css" />
+    <style>
+       @media screen and (min-width: 640px) and (max-width: 1170px) {
+           .usage-main .register-page p{width: 60%;margin: auto;}
+           .job_word p {background-size: 8% !important;}
+           .qualifications a{ margin-left: 6%;margin-bottom: 20px; width: 25%;}
+           .entry-content .down1{background-size:40% !important; }
+           .entry-content .down1 .text .w{text-align: center;}
+        }
+    </style>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+
+    <script src="/js/slider-jquery.min.js"></script>
+    <script src="/js/slider.js"></script>
+    <!-- Vendor js --->
+    <script src="/js/nav/iscroll-min.js"></script>
+    <script src="/js/nav/dropdown.min.js"></script>
+
+    <!-- drawer js -->
+    <script src="/js/nav/jquery.drawer.js"></script>
+
+    <!--/****百度统计异步代码***-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?34b90c82b231a77b6cef1c285415f38c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*-微信弹窗--->*/
+            $(".weixin-er").hide();
+            $(".weixin").mouseover(function () {
+                $(".weixin-er").show();
+            });
+            $(".weixin").mouseout(function () {
+                $(".weixin-er").hide();
+            });
+            $(".weixin-er").mouseover(function () {
+                $(".weixin-er").show();
+            });
+            $(".weixin-er").mouseout(function () {
+                $(".weixin-er").hide();
+            });
+
+            /*******二维码弹窗***/
+            $("#register_btn").click(function () {
+                $("#tips_window").show();
+            });
+
+            /***关闭弹窗***/
+            $(".close").click(function () {
+                $(".back-window").hide();
+            });
+
+        });
+    </script>
+
+</head>
+
+
+
+  <body class="drawer drawer-left drawer-navbar site-base">
+
+    <header role="banner">
+    <div class="drawer-header">
+        <span class="hide">翼道网络</span>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+        </button>
+    </div>
+    <div class="drawer-main drawer-navbar-default">
+        <nav class="container drawer-nav" role="navigation">
+            <div class="drawer-brand">
+                <a href="/"><img src="/images/common/edao_logo.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。" /></a>
+            </div>
+
+            <div class="drawer-menu-item dropdown drawer-dropdown top-user-bar mobile-none">
+                <a href="#" class="user-icon" data-toggle="dropdown" role="button" aria-expanded="false"><img src="/images/common/log-default-avatar.png"></a>
+                <ul class="drawer-submenu dropdown-menu" role="menu">
+                    <li><a id="register_btn" href="javascript:;">注册</a></li>
+                    <li><a href="https://sys.edaotech.com/es/login_c" target="_blank">企业登录</a></li>
+                    <li><a href="https://sys.edaotech.com/es/login_p" target="_blank">个人登录</a></li>
+                </ul>
+            </div>
+
+            <ul class="drawer-menu">
+                <li class="drawer-menu-item">
+                    <a href="/">首页</a>
+                </li>
+                <li class="drawer-menu-item dropdown drawer-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false">翼道APP <span class="caret"></span></a>
+                    <ul class="drawer-submenu dropdown-menu" role="menu">
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp1">翼道iKey简介</a></li>
+                        <li class="drawer-submenu-item"><a href="/download.html">下载列表</a></li>
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp2">可以干啥</a></li>
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp3">功能特性</a></li>
+                        <li class="drawer-submenu-item"><a href="/edaoikey.html#cp4">操作说明</a></li>
+                        <li class="drawer-submenu-item"><a href="/usage.html">使用说明</a></li>
+                    </ul>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="http://ent.edaotech.com" target="_blank">政企版</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="/fbfav.html">发布占便宜</a>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="/sqrk.html">开发平台</a>
+                </li>
+                <li class="drawer-menu-item dropdown drawer-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false">关于翼道 <span class="caret"></span></a>
+                    <ul class="drawer-submenu dropdown-menu" role="menu">
+                        <li class="drawer-submenu-item"><a href="/about-us.html#ab1">公司简介</a></li>
+                        <li class="drawer-submenu-item"><a href="/news.html">新闻动态</a></li>
+                        <li class="drawer-submenu-item"><a href="/qualifications.html">公司资质</a></li>
+                        <li class="drawer-submenu-item"><a href="/about-us.html#ab3">联系我们</a></li>
+                        <li class="drawer-submenu-item"><a href="/about-us.html#ab4">招兵买马</a></li>
+                    </ul>
+                </li>
+                <li class="drawer-menu-item">
+                    <a href="https://safe.edaotech.com/" target="_blank">紧急通道</a>
+                </li>
+            </ul>
+
+            <div class="drawer-footer">
+                <span></span>
+            </div>
+            <div class="clear"></div>
+        </nav>
+    </div>
+    <!-- /.drawer-main -->
+</header>
+<!-- /.site-header -->
+
+<script>
+
+    $(document).ready(function(){
+        $('.drawer').drawer();
+    });
+
+
+</script>
+
+<div class="main">
+
+    <div class="page-content">
+      <div class="wrapper">
+        <style>
+    .top-block{border-bottom: 2px solid #d62033;}
+</style>
+<div class="type-post">
+    <div class="container">
+        <div id="loop" class="loop-posts">
+            <div class="post-container">
+
+              <header class="post-header">
+                <h1 class="post-title">大数据时代“眼睛”无处不在，想保护个人信息？难！</h1>
+                <p class="post-meta">2015年03月23日</p>
+              </header>
+
+              <div class="content entry-content post-conter">
+                <p>移动互联网让网络变得无处不在，也在每个人背后增加了许多窥视的眼睛。用户的身份、位置、银行账号……所有这些敏感信息都可以被各形各色的采集者获取，而且大多是合法的。合法获取与滥用、泄漏的风险并不矛盾，在大数据时代，个人信息保护遇到了困境。
+<!--more--></p>
+
+<p style="text-indent: 0;">
+	<img src="/assets/uploads/2015/2015-03-23-201540323/14268636391-560x284.jpg" alt="" />
+</p>
+
+<p>中国已经进入了真正意义上的移动互联网时代，终端的便携性决定了移动互联网和PC时代互联网本质的不同。手机、Pad、可穿戴设备等便携智能终端与人寸步不离，随着人的移动而移动，网络因而变得无处不在。</p>
+
+<p>移动互联网时代改变了人们的生活习惯和行为模式——今天，人们已经习惯在移动终端上看新闻、聊微信和逛淘宝。</p>
+
+<p>目前，手机在中国的普及率已经超过了百分之百，平均每个人拥有一部以上的手机。如果再加上Pad、可穿戴设备、笔记本电脑，全国范围内可以登录移动互联网的设备数量将是一个天文数字。</p>
+
+<p>同时，OTT的兴起使得互联网业务如雨后春笋层出不穷。这些业务除了获取用户的身份、位置、银行账号等个人信息以外，本身还会产生大量个人信息，比如使用服务的日志信息和内容信息。</p>
+
+<p><strong>移动互联网的负外部性：谁都可以获取你的个人信息</strong></p>
+
+<p>移动互联网的无处不在，使得个人信息的收集和利用行为无处不在。海量的智能终端设备和业务应用，则进一步增加了个人信息保护的难度。在移动互联网时代，个人信息的保护正遭受着严峻的挑战。</p>
+
+<p><strong>电信运营商和互联网服务提供者为了向用户提供通信和各种各样的互联网服务，每时每刻都要获取海量的来自终端和用户的信息。</strong></p>
+
+<p>比如，电信运营商需要实时采集每一台接入网络的智能终端的使用行为，包括设备的识别编码、此时此刻的位置和移动轨迹、正在进行的通话或者正在使用的互联网服务、使用的IP地址和浏览网站的IP地址、发生的数据流量等等。不采集这些信息，用户就无法使用通信服务。</p>
+
+<p>如果对这些实时数据和历史数据进行适当的分析，便不难发现用户规律性的行动轨迹、经常使用的APP种类、不同终端在位置和时间上的耦合关系等，进而对用户的工作单位、生活习惯、兴趣爱好、职业特点、消费偏好乃至身份关系在一定程度上作出推断。例如一个用户经常使用同花顺的软件，他有很大概率是一个股民。</p>
+
+<p><strong>相较电信运营商而言，互联网服务提供者获取用户信息的途径更加多样化，获取的信息内容也更加丰富。</strong></p>
+
+<p>比如支付宝等第三方支付应用可以获取用户的银行账号和密码，并掌握通过该软件发生的每一笔账务往来信息；一款地图导航软件甚至在用户不使用导航服务时也可以持续获取用户的位置信息，只要用户曾经使用过它并且没有取消提供位置信息的许可。</p>
+
+<p>越来越多的软件要求绑定手机号码、银行账户、身份证号码等个人信息。尽管工信部出台的《电信和互联网服务用户个人信息保护规定》里要求获取用户信息必须以“提供服务所必需”为限，但互联网服务的可拓展性使得“必需”的标准变得动态而宽泛。</p>
+
+<p>实践中，大量的软件都通过征得用户同意来合法获取为提供当前服务所不必要的用户个人信息。比如一个阅读软件也会要求获取用户的位置信息，部分软件甚至还将用户是否提供不必要的个人信息作为能否使用服务的前提条件。</p>
+
+<p>实际上，移动互联网时代能够获取用户个人信息的主体远不止电信运营商和互联网服务提供者。</p>
+
+<p><strong>随着人们生活方式和社会组织运行方式的互联网化，通过互联网获取个人信息的主体也越来越多样化。</strong></p>
+
+<p>比如手机的操作系统会将很多信息实时或者定期地提供给它的制造商或者操作系统开发者。</p>
+
+<p>又比如在一个简单的网购行为中，除了电信运营商和网购平台之外，能获取个人信息的至少还包括卖家、物流公司，甚至包括保险公司。</p>
+
+<p>从行业来看，包括电信和互联网、商贸流通、物流配送、金融保险；从企业性质来看，可能包括国企、外企、民企甚至个体工商户。</p>
+
+<p>上面的例子有一个共同的特点，就是这些个人信息都是采集方合法获取、经过用户同意的。其中大部分都是服务所必需的，不获取这些信息将无法为用户提供服务。</p>
+
+<p>然而，在巨大的商业利益诱惑面前，通过第三方插件、恶意程序、非法后门、商业购买等手段非法获取个人信息的情况更是比比皆是、屡禁不止。</p>
+
+<p>可见，在移动互联网时代，个人信息安全保护形势异常严峻。移动互联网时代的生活便利是以个人私隐和财产的安全风险为代价。这是移动互联网发展带来的负外部性，不以人的意志为转移。</p>
+
+<p><strong>去身份化？面对大数据也许只是徒劳</strong></p>
+
+<p>应对这种情况，我们首先想到的会是信息的去身份化。很多国家的法律也是主要从去身份化入手规范个人信息利用的。但实践中，去身份化的努力正在政策、业务和技术三个层面受到冲击，其中尤以大数据时代的技术冲击最为深刻、猛烈。</p>
+
+<p>首先，在政策上，手机和部分互联网业务的实名制使得终端和业务与个人身份绑定的基础越来越牢固。</p>
+
+<p>其次，在业务上，第三方支付等应用的兴起绑定了越来越多的银行账号，存款实名制二十多年的实施成果和人们对财产利益的关注，使电信和互联网业务由形式实名迅速转向实质实名。</p>
+
+<p>最后，也是最重要的，大数据时代的海量数据和高度发达的数据分析技术，使得去身份化的信息经过不同分析、对比、组合能够重新恢复身份化，并识别出更多的内容。</p>
+
+<p>这三个方面的变化不仅冲击着去身份化的努力，也从整体上对大数据时代的个人信息保护法律构成了挑战。</p>
+
+<p>【本文是作者在2014年12月22日在上海交通大学凯原法学院的演讲《大数据时代的个人信息保护悖论与法律调整》的第一部分，由该院硕士生高振翔同学根据录音整理，原载于《互联网金融法律评论》（第二期）。】</p>
+
+
+                  <div class="bshare-custom">
+                      <div class="bsPromo bsPromo2"></div>
+                      <a title="分享到QQ空间" class="bshare-qzone"></a>
+                      <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                      <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a>
+                      <a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a>
+                      <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                      <span style="float: none;" class="BSHARE_COUNT bshare-share-count">30.4K</span>
+                  </div>
+                  <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+                  <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+              </div>
+
+            </div>
+        </div>
+        <div id="sidebar" class="sidebar-container mobile-none">
+    <div class="widget widget_categories">
+        <h2 class="widgettitle">分类</h2>
+        <ul>
+            
+            <li class="cat-item cat-item-10">
+                <a href="/category/official-dynamic/" onclick="location='/category/official-dynamic/'">
+                    <strong>官方动态</strong>
+                </a>
+            </li>
+            
+            <li class="cat-item cat-item-10">
+                <a href="/category/media-reports/" onclick="location='/category/media-reports/'">
+                    <strong>媒体报道</strong>
+                </a>
+            </li>
+            
+            <li class="cat-item cat-item-10">
+                <a href="/category/industry/" onclick="location='/category/industry/'">
+                    <strong>行业资讯</strong>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="widget widget_categories">
+        <h2 class="widgettitle">归档</h2>
+        <ul>
+            
+            
+            <li><a href="/2015/09/">2015年09月</a></li>
+            
+            
+              
+            
+            <li><a href="/2015/06/">2015年06月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2015/05/">2015年05月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2015/04/">2015年04月</a></li> 
+            
+            
+              
+            
+            <li><a href="/2015/03/">2015年03月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/12/">2014年12月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/11/">2014年11月</a></li> 
+            
+            
+              
+            
+            <li><a href="/2014/10/">2014年10月</a></li> 
+            
+            
+              
+            
+            <li><a href="/2014/09/">2014年09月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/06/">2014年06月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/05/">2014年05月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/04/">2014年04月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/03/">2014年03月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/02/">2014年02月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2014/01/">2014年01月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            <li><a href="/2013/12/">2013年12月</a></li> 
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="footer">
+    <div class="pointer"></div>
+    <div class="container">
+        <div class="links">
+            <ul class="widgets">
+                <li><a href="/">首页</a></li>
+                <li><a href="/edaoikey.html">产品介绍</a></li>
+                <li><a href="https://safe.edaotech.com/">账号安全</a></li>
+                <li><a href="/usage.html">使用说明</a></li>
+                <li><a href="/usage.html#cp2">FAQ</a></li>
+                <li><a href="/download.html">下载列表</a></li>
+                <li><a href="/about-us.html">关于翼道</a></li>
+                <li><a href="/about-us.html#ab3">联系我们</a></li>
+                <li><a href="/about-us.html#ab4">招兵买马</a></li>
+                <!--------后台调用footer，模板更新后无此操作------>
+            </ul>
+        </div>
+        <div class="bquan fr">
+            <div class="sj-links"><div class="wei-block"><strong class="weixin-er"></strong><span class="weixin"></span></div><a target="_blank" href="http://weibo.com/u/3482431031"><span class="weibo"></span></a></div>
+            <div style="line-height:22px; font-size:12px;" class="text"><span>Copyright &copy;2013 edaotech.com </span><a target="_blank" href="http://www.miit.gov.cn" style="color:#999;">粤ICP备13038482号</a></div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!--------注册------->
+<div style="width:200px; height:200px;" id="tips_window" class="back-window">
+    <div id="back"></div>
+
+    <div class="aq_comm_frame">
+        <div class="comm_block">
+            <div class="close"></div>
+            <div class="r_top"></div>
+            <div class="r_center">
+
+                <p align="center" style="padding:20px 0; font-size:18px;">翼道的注册是通过翼道APP完成，请扫描下载</p>
+                <p align="center" style="padding-bottom:20px;">
+                    <img style="margin-right:20px;" width="180" src="/images/common/qrcode.png" />
+                    <img style="margin-left:20px;" width="180" src="/images/common/ios_qd.png">
+                </p>
+
+            </div>
+            <div class="r_bottom"></div>
+        </div>
+    </div>
+
+</div>
+<!--百度访问分析代码-->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F34b90c82b231a77b6cef1c285415f38c' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" src="/js/add.js"></script>
+
+  </body>
+
+</html>
