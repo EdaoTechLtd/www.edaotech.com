@@ -24,7 +24,7 @@
 .entry-content .view2 .text{ right:0px; top:80px; width:384px;}
 .entry-content .view2 h3{font-size:24px;}
 
-.entry-content .view3 .td-box{ padding:35px 25px; width:45%; float:left; height:120px; border:1px solid #ddd; border-style:solid solid none none; min-width:500px;}
+.entry-content .view3 .td-box{ padding:35px 25px; width:45%; float:left; height:190px; border:1px solid #ddd; border-style:solid solid none none; min-width:500px;}
 .entry-content .view3 .first{ border:1px solid #ddd; border-style:solid solid none solid;}
 .entry-content .view3 .last{ border-bottom:1px solid #ddd;}
 .entry-content .view3 .td-box .tedian{ width:105px; float:left; margin-top:5px; }
@@ -135,7 +135,7 @@ ul#topbar-menu li.menu-item a .jj-link {
 .liuchen{ position:relative;}
 .lc-block1{ width:1170px; margin-bottom:30px;}
 .lc-block2{ width:1170px; }
-.c-title{width:30px; height:120px; text-align:center; font-size:22px; line-height:30px; padding:30px;float:left; background:#333;color:#fff;}
+.c-title{width:90px; height:180px; text-align:center; font-size:22px; line-height:30px; padding:30px;float:left; background:#333;color:#fff;}
 .lc-block1 .info-box{width:216px;float:left;height:180px;}
 .lc-block2 .info-box{ width:270px; float:left;height:180px;}
 .box1{ background:#f16a66;}
@@ -159,7 +159,7 @@ a.sqrk-btn2:hover{ color:#000; text-decoration:underline;}
 .rslides img { display: block; height: auto; float: left; width: 100%; border: 0; }
 .slide_container { margin:0 auto; position: relative; width:1170px; height:300px; overflow:hidden; }
 .slide { position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0; }
-.slide li { position: absolute; width: 100%; left: 0; top: 0; }
+
 .slide img { display: block; position: relative; z-index: 1; height: auto; width: 100%; border: 0; }
 .slide_nav { position: absolute; -webkit-tap-highlight-color: rgba(0,0,0,0); top: 50%; left: 0; opacity: 0.7; z-index: 3; text-indent: -9999px; overflow: hidden; text-decoration: none; height: 61px; width: 38px; background: transparent url("../images/fbfav/themes.gif") no-repeat left top; margin-top: -30px; }
 .slide_nav:active { opacity: 1.0; }
@@ -174,8 +174,14 @@ a.sqrk-btn2:hover{ color:#000; text-decoration:underline;}
 .wrap-inner{ max-width:1170px; margin:auto; }
 .rukou-step-ul{ list-style:none; margin:20px auto; padding:0; display:table;}
 .rukou-step-ul .step { float: left; margin-right: -8px;position: relative;list-style:none; padding:0; margin:0;}
-.rukou-step-ul .step .progress {color: #fff;}
-.rukou-step-ul .progress .text{ background:#fff; height:24px; display:block; line-height:24px; text-align:center; color:#999; padding:10px 20px; border:1px solid #d6eeff; border-style:solid none solid solid; cursor:pointer;}
+.rukou-step-ul .step .progress {
+    color: #fff;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+}
+.rukou-step-ul .progress .text{ background:#fff; display:block; line-height:24px; text-align:center; color:#999; padding:10px 20px; border:1px solid #d6eeff; border-style:solid none solid solid; cursor:pointer;}
 .rukou-step-ul .current .progress .text{ background:#db2033; color:#fff; border-color:#db2033;}
 .rukou-step-ul .progress .text:hover{ color:#333;}
 .rukou-step-ul .current .progress .text:hover{ color:#fff;}
@@ -223,6 +229,8 @@ a.sqrk-btn{ padding:10px 20px; border-radius:5px; font-size:24px; text-align:cen
 .hudong br{ display:none;}
 .job_word{ background:url("../images/about/pattern.png") repeat scroll 0 0 #fff; width:100%; height:100px; border:1px solid #ddd; margin-bottom:20px;}
 
+.entry-content #accordion .panel-title{margin: 0;font-size: 1.1em;}
+
 /*******used********/
 .register-page p,.login_page p{ font-size:14px; line-height:56px;}
 .faq-box ul li{ list-style:url(../images/usage/quan.png); color:#666; font-size:14px; line-height:28px; margin-top:30px;}
@@ -240,7 +248,9 @@ a.sqrk-btn{ padding:10px 20px; border-radius:5px; font-size:24px; text-align:cen
 .pagination .last{border-radius:0 3px 3px 0;}
 .pagination .first{border-radius:3px 0 0 3px;}
 
-
+.top-bar .navbar-header{margin: 0;padding: 0 15px;}
+.top-bar{max-width: 1170px;}
+.navbar-default .top-bar .navbar-collapse,.top-bar .navbar-nav{margin: 0;}
 
 
 
