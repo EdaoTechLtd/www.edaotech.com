@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+
+    <!--[if lte gt 9]>
+<![endif]-->
+<!--common-browser导航-->
+<nav class="navbar navbar-default navbar-fixed-top re-navbar-default">
+    <div class="top container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/common/edao_logo.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="/index.html">首页</a></li>
+                <li class="btn-for-modal"><a  href="javascript:void(0)">产品体验</a>
+                    <p class="modal-to-wait"><span class="arrow-up"></span>无密码体验平台上线倒计时，敬请期待</p>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/products_system.html">移动数字认证系统</a></li>
+                        <li><a href="/products_sdk.html">移动数字认证SDK</a></li>
+                        <li><a href="/products_stamp.html">电子签章</a></li>
+                        <li><a href="/products_num.html">数字签名服务器</a></li>
+                        <li><a href="/products_time.html">时间戳服务器</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/solution_gvn.html">电子政务解决方案</a></li>
+                        <li><a href="/solution_medical.html">电子医疗解决方案</a></li>
+                        <li><a href="/solution_enterprise.html">企业集团解决方案</a></li>
+                        <li><a href="/solution_education.html">高校解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于翼道<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/about_summary.html">公司简介</a></li>
+                        <li><a href="/news">企业动态</a></li>
+                        <li><a href="/about_qualify.html">荣誉资质</a></li>
+                        <li><a href="/about_hr.html">招兵买马</a></li>
+                        <li><a href="/about_contact.html">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <section class="page-main">
+        <div class="page-banner" id="pageBanner">
+            <div class="container padding-t60">
+                <h2>保驾护航，打造铜墙铁壁</h2>
+                <div class="tit_line"></div>
+                <p>我们专注于解决各种安全难题 <br> 为业务保驾护航</p>
+            </div>
+            <canvas class="col-lg-12 col-md-12 col-xs-12"></canvas>
+        </div>
+    </section>
+<!--js for this page-->
+<script src="assets/js/ban.js"></script>
+<script src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    //设置可控风险向上滑出
+    var m_st, m_po = 400;
+    $(window).bind("scroll", function(){
+        m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+        if (m_st > m_po)
+        {
+            $('.set-login-style-img').css("visibility","inherit");
+            $('.set-login-style-img').addClass('a-bounceinB');
+        }else{
+            $('.set-login-style-img').removeClass('a-bounceinB');
+        }
+    });
+
+    //特点滑动
+    var owl = $("#owl-demo");
+    owl.owlCarousel({
+        items : 6, //10 items above 1000px browser width
+        itemsDesktop : [1000,6], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900,6], // betweem 900px and 601px
+        itemsTablet: [600,2], //2 items between 600 and 0
+        itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+    });
+</script>
+
+    <!--hr-->
+<div class="type-post">
+    <div class="container padding-t60 padding-b60">
+<div class="pro-header ">
+    <div class="pro-title"><span class="title-txt">招兵买马</span></div>
+    <div class="job_word">
+        <p style="background: url('/assets/images/about/job_icon.jpg') 0 0 no-repeat; padding-left: 130px; padding-top: 1em; font-size: 18px;">“据说，这里的IT男结识白富美的机会高于同行63.8%；据说，这里的下午茶点品质与半岛酒店的相仿；据说，这里的妹纸集齐了CHANEL 近5年的手袋款式；据说，这个团队的购车摇号首次中签率为100%；据说，这群人都做着一个颠覆移动互联网的梦。”</p>
+    </div>
+    <img  alt="招聘正在进行中，马上加入翼道网络技术有限公司" class="job_banner" src="/assets/images/about/job_banner.jpg">
+    <div class="job-box"></div>
+</div>
+<div class="careers-box">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        互联网事业部大客户经理
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="careers-intro">
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">职位描述：</h3>
+                        <ul>
+                            <li>负责互联网行业大客户的开发、维护和项目运作；</li>
+                            <li>顾问式销售，善于发现客户运营中的问题，并为之提供专业而贴身的解决方案；</li>
+                            <li>做好沟通和服务，提升客户满意度，推动成交，提高单个客户销售额，完成个人及团队销售指标。</li>
+                        </ul>
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">任职要求：</h3>
+                        <ul>
+                            <li>专科以上学历，2年以上互联网大客户销售经验；</li>
+                            <li>沟通能力强，文案功底扎实，能从容应对高层谈判和中、大规模培训；</li>
+                            <li>学习能力强，性格积极、阳光；</li>
+                            <li>有电商、网游、在线旅游、招聘、知名论坛的人脉资源者优先。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        政企事业部大客户经理
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <div class="careers-intro">
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">职位描述：</h3>
+                        <ul>
+                            <li>负责政府机构、集团企业的大客户的开发、维护和项目运作；</li>
+                            <li>顾问式销售，善于发现客户运营中的问题，并为之提供专业而贴身的解决方案；</li>
+                            <li>做好沟通和服务，提升客户满意度，推动成交，提高单个客户销售额，完成个人及团队销售指标。</li>
+                        </ul>
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">任职要求：</h3>
+                        <ul>
+                            <li>专科以上学历，3年以上政企大客户销售经验；</li>
+                            <li>沟通能力强，文案功底扎实，熟悉政府招投标流程，能从容应对高层谈判及讲标；</li>
+                            <li>学习能力强，政治觉悟高，兴趣广泛，性格开朗。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        资深Java工程师
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <div class="careers-intro">
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">职位描述：</h3>
+                        <ul>
+                            <li>根据产品总体设计，开发、维护公司的核心系统以及其他扩展系统并协助完成技术的积累以及培训；</li>
+                            <li>根据产品组规划对负责的模块质量和代码负责；</li>
+                            <li>在产品生命周期内对产品进行升级和维护；</li>
+                            <li>编写、提交技术开发文档。</li>
+                        </ul>
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">任职要求：</h3>
+                        <ul>
+                            <li>本科及以上学历，精通Java语言，熟练掌握面向对象程序的设计、开发，三年以上Java Web（JSP/Servlet）的开发经验；</li>
+                            <li>熟练掌握Spring/Struts/Hibernate/MyBatis/开发框架与JSP、HTML、Javascript、css等前端技术，了解Weblogic、WebSphere等应用中间件；</li>
+                            <li>熟悉TCP/HTTP(S)/WebService/Rest等集成交互技术；</li>
+                            <li>掌握包括但不限于Oracle/MySQL/SQLServer在内的任意一种关系型数据库的设计与性能调优；</li>
+                            <li>工作积极主动，具备良好的沟通与表达能力，具备较好的承压能力；</li>
+                            <li>熟悉Linux/Unix下的系统开发、调优与部署者优先考虑；</li>
+                            <li>熟悉信息安全基本知识，如PKI/CA体系优先考虑；</li>
+                            <li>CEE-4级以上，能阅读并理解英文技术文档。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        文案策划类
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                    <div class="careers-intro">
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">职位描述：</h3>
+                        <ul>
+                            <li>市场方案、推广文案撰写，官网官微维护。</li>
+                        </ul>
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">任职要求：</h3>
+                        <ul>
+                            <li>创意好，文笔佳，熟悉OFFICE、PS、视频制作。必须提供过往作品。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        售前支持类
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                    <div class="careers-intro">
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">职位描述：</h3>
+                        <ul>
+                            <li>产品技术文档、技术手册、测试报告撰写，现场部署测试。</li>
+                        </ul>
+                        <h3 style="font-weight: bold; font-size: 12px; margin-bottom: 0px;">任职要求：</h3>
+                        <ul>
+                            <li>熟悉C,文字功夫扎实，熟悉OFFICE（WORD连目录都不会自动生成的请绕行）；</li>
+                            <li>性格开朗，态度积极；</li>
+                            <li>对WINDOW、LINUX系统熟悉者优先。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+    </div>
+</div>
+
+    <section class="footer">
+    <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">
+    <div class="container">
+        <div class="foot-list row">
+            <div class="footer_up">
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_sina.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微博</h4>
+                </div>
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_weechat.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微信公众号</h4>
+                </div>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt class="btn-for-modal"><a href="javascript:void(0)" class="text-color-write hover-color-white">产品体验</a> <p class="modal-to-wait modal-to-wait-l34"><span class="arrow-up"></span> 无密码体验平台上线倒计时，敬请期待</p></dt>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>产品中心</dt>
+                    <dd><a href="/products_system.html">移动数字认证系统</a></dd>
+                    <dd><a href="/products_sdk.html">移动数字认证SDK</a></dd>
+                    <dd><a href="/products_stamp.html">电子签章</a></dd>
+                    <dd><a href="/products_num.html">数字签名服务器</a></dd>
+                    <dd><a href="/products_time.html">时间戳服务器</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>解决方案</dt>
+                    <dd><a href="/solution_gvn.html">电子政务解决方案</a></dd>
+                    <dd><a href="/solution_medical.html">电子医疗解决方案</a></dd>
+                    <dd><a href="/solution_enterprise.html">企业集团解决方案</a></dd>
+                    <dd><a href="/solution_education.html">高校解决方案</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>关于我们</dt>
+                    <dd><a href="/about_summary.html">公司简介</a></dd>
+                    <dd><a href="/news">企业动态</a></dd>
+                    <dd><a href="/about_qualify.html">荣誉资质</a></dd>
+                    <dd><a href="/about_hr.html">招兵买马</a></dd>
+                    <dd><a href="/about_contact.html">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <div class="fidoleft col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <img class="imr-6" src="/assets/images/index/footer1.png" alt="Fido" title="Fido">
+                    <img class="imr-20" src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="国密生产销售资格" title="国密生产销售资格">
+                </div>
+                <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <p>©2017 广州翼道网络科技有限公司 版权所有 </p>
+                    <p>粤ICP备13038482号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    //回到顶部
+    $(function(){
+        var winH = $(window).height();
+
+        $(window).scroll(function(e) {
+            var winT = $(window).scrollTop();
+            if(winT>winH){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        });
+
+        $('.totop').click(function(e) {
+            $('html,body').animate({scrollTop:0})
+        });
+
+    })
+
+
+</script>
+
+
+  </body>
+
+</html>

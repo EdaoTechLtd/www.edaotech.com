@@ -1,0 +1,60 @@
+/*
+	Astral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Basic */
+
+body {
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    -ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+}
+
+/* Section/Article */
+
+section > .last-child, section.last-child, article > .last-child, article.last-child {
+    margin-bottom: 0;
+}
+
+/* Nav */
+.re-navbar-default{
+    background-color: #000;
+}
+.navbar-default .navbar-nav > .open > a{
+    background-color: none;
+    background-color:rgb(0,0,0)
+}
+.re-carousel-indicators li{
+    background: #0b0f34;
+}
+.re-carousel-indicators .re-active{
+    background: #fff;
+}
+.re-carousel-indicators .re-active{
+    background: #008AFF;
+}
+#newslist .newstitem{
+    border-bottom:1px solid #0b0f34;
+}
+.news-content a.more {
+    background: #fff
+}
+.modal-to-wait{
+    border: 1px solid #000;
+}
+.detail_subcript{
+    display: none;
+    background: #008aff;
+}
+.intem_plan:hover .detail_subcript{
+    display: block;
+
+}
+.page-banner{
+    padding-top: 140px;
+}
+.page-banner canvas{
+    background: url("../images/common/pattern.svg");
+}

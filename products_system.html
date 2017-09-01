@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+
+    <!--[if lte gt 9]>
+<![endif]-->
+<!--common-browser导航-->
+<nav class="navbar navbar-default navbar-fixed-top re-navbar-default">
+    <div class="top container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/common/edao_logo.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="/index.html">首页</a></li>
+                <li class="btn-for-modal"><a  href="javascript:void(0)">产品体验</a>
+                    <p class="modal-to-wait"><span class="arrow-up"></span>无密码体验平台上线倒计时，敬请期待</p>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/products_system.html">移动数字认证系统</a></li>
+                        <li><a href="/products_sdk.html">移动数字认证SDK</a></li>
+                        <li><a href="/products_stamp.html">电子签章</a></li>
+                        <li><a href="/products_num.html">数字签名服务器</a></li>
+                        <li><a href="/products_time.html">时间戳服务器</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/solution_gvn.html">电子政务解决方案</a></li>
+                        <li><a href="/solution_medical.html">电子医疗解决方案</a></li>
+                        <li><a href="/solution_enterprise.html">企业集团解决方案</a></li>
+                        <li><a href="/solution_education.html">高校解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于翼道<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/about_summary.html">公司简介</a></li>
+                        <li><a href="/news">企业动态</a></li>
+                        <li><a href="/about_qualify.html">荣誉资质</a></li>
+                        <li><a href="/about_hr.html">招兵买马</a></li>
+                        <li><a href="/about_contact.html">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <section class="page-main">
+        <div class="page-banner" id="pageBanner">
+            <div class="container padding-t60">
+                <h2>翼道数字安全认证产品中心</h2>
+                <div class="tit_line"></div>
+                <p>完善的安全体系建设，安全可靠有保障</p>
+            </div>
+            <canvas class="col-lg-12 col-md-12 col-xs-12"></canvas>
+        </div>
+    </section>
+<!--js for this page-->
+<script src="/assets/js/ban.js"></script>
+<script src="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    //设置可控风险向上滑出
+    var m_st, m_po = 400;
+    $(window).bind("scroll", function(){
+        m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+        if (m_st > m_po)
+        {
+            $('.set-login-style-img').css("visibility","inherit");
+            $('.set-login-style-img').addClass('a-bounceinB');
+        }else{
+            $('.set-login-style-img').removeClass('a-bounceinB');
+        }
+    });
+
+    //特点滑动
+    var owl = $("#owl-demo");
+    owl.owlCarousel({
+        items : 6, //10 items above 1000px browser width
+        itemsDesktop : [1000,6], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900,6], // betweem 900px and 601px
+        itemsTablet: [600,2], //2 items between 600 and 0
+        itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+    });
+</script>
+
+    <!--产品中心-->
+    <div class="container pro-header padding-b60">
+        <div class="haoh article_title_box">
+            <div class="title_box">
+                <h1 class="pull-left imr-20">移动数字认证系统</h1>
+                <a class="link_bluef_btn link_blueb_btn pull-left mar">在线体验</a>
+            </div>
+            <div class="haoh article_title_box">
+                <h2 class="pull-left">系统简介</h2>
+            </div>
+            <p class="border_pure lh28px taj">翼道移动数字认证系统是基于PKI技术建立的一套基于移动设备数字证书的云安全认证体系，打破传统“账号+密码”的方式，首创移动设备信息推送和证书授权相结合的登录方式，以手机、平板电脑作为授权载体，在移动互联网上实现数字证书的下载、验证、应用等服务，同时融合了安全登录和统一各平台（包括PC/移动设备/云/虚拟化）的认证鉴权，从技术上解决网上身份认证、信息完整性和抗抵赖等安全问题，为网络应用提供可靠的安全保障。
+            </p>
+        </div>
+            <div class="haoh article_title_box">
+                <h2 class="pull-left">产品形态</h2>
+            </div>
+            <p class="article_h3">
+                翼道移动数字认证系统包含两部分：
+            </p>
+            <img src="/assets/images/edaoikey/mobile_system.png" alt="" class="padding-t60 padding-b60 img-responsive center-block">
+        <p class="text-info taj">移动数字认证服务端管理系统（含三方应用系统集成网关、自建CA系统、移动认证App接口网关、移动身份认证管理后台等系统）</p>
+        <p class="text-info taj">翼道iKey（客户端APP）（含应用APP管理系统、IOS和安卓客户端、认证体系应用系统、信息推送管理系统等）</p>
+            <div class="haoh article_title_box">
+                <h2>系统构架</h2>
+            </div>
+        <img src="/assets/images/edaoikey/mobile_system02.png" alt="" class="padding-t60 padding-b60 img-responsive center-block">
+        <h3 class="t20b10 font-600 myh3">由CA为移动终端用户和业务服务器签发数字证书：</h3>
+        <p class="taj lessimportant"><i class="fa fa-circle-o-notch fa-x blue_color imr-6" aria-hidden="true"></i>由CA中心为移动终端用户和业务系统服务器签发标识网络合法身份的数字证书，并提供证书申请、证书更新、证书注销等数字证书生命周期管理服务。</p>
+        <h3 class="t20b10 font-600 myh3">利用移动安全产品套件实现业务系统移动应用安全：</h3>
+
+        <p class="taj lessimportant"><i class="fa fa-circle-o-notch fa-x blue_color imr-6" aria-hidden="true"></i>通过业务系统与移动安全套件集成，利用数字证书建立SSL安全传输通道，在身份认证网关、数字签名服务器的配合下，为业务系统提供身份认证、数字签名以及数字信封等服务来实现用户登录认证、敏感信息加密传输以及在敏感操作过程中生成/验证和存储数字签名，解决关键业务操作的抗抵赖性。</p>
+        <div class="haoh article_title_box">
+            <hr>
+            <h2 class="t20b10">产品功能</h2>
+        </div>
+        <h3 class="t20b10 font-600 myh3">身份认证，无需密码，即可实现身份认证</h3>
+        <p class="taj lessimportant"><i class="fa fa-circle-o-notch fa-x blue_color imr-6" aria-hidden="true"></i>翼道移动身份认证系统遵循和“U盾”相同的PKI技术规范，将移动终端设备变成和“U盾”一样的身份认证介质。可应用在登录环节的身份核验，以及应用系统关键操作环节的二次身份认证，如流程审批，资金转账的二次身份确认等。</p>
+        <h3 class="t20b10 font-600 myh3">提供强大管理后台，方便管理，维护成本低</h3>
+        <p class="taj lessimportant"><i class="fa fa-circle-o-notch fa-x blue_color imr-6" aria-hidden="true"></i>提供强大的账号管理功能，可根据具体单位的相关规定和使用习惯，设定好账号管理系统，如账号体系设定（工作证号、身份证号、手机号等）、一键注册、智能批量锁定、用户自维护等。可大量节省管理成本。</p>
+        <h3 class="t20b10 font-600 myh3">信息主动推送，取代短信，节省成本</h3>
+        <p class="taj lessimportant"><i class="fa fa-circle-o-notch fa-x blue_color imr-6" aria-hidden="true"></i>翼道后台预留多种数据接口，可与对接的系统作信息同步。在APP前端特设“公告栏”，信息可按需同步至翼道iKey，方便实时查询处理。如OA中的待办事项、流程处理结果、财务系统中的金额变动信息等，可由系统设定，直接在APP中获得提示，安全快捷，无需再耗费短信成本。</p>
+        <h3 class="t20b10 font-600 myh3">远程单次授权，防止他人冒用身份</h3>
+        <p class="taj lessimportant"><i class="fa fa-circle-o-notch fa-x blue_color imr-6" aria-hidden="true"></i>委托他人代办业务时可进行远程授权，包括单次授权、操作授权，远程退出等功能，并支持授权有效时间设置，只要有网络连接的地方就可以使用，没有任何使用地域的限制。</p>
+        <div class="haoh article_title_box">
+            <hr>
+            <h2 class="pull-left t20b10">“翼道iKey”APP</h2>
+        </div>
+        <p class="taj lessimportant">
+            <i class="fa fa-circle-o-notch fa-x blue_color imr-6" aria-hidden="true"></i>
+            “翼道iKey”以移动终端（智能手机）作为数字证书的存储介质，在移动终端上实现数字证书的生成、存储、调用、验证、冻结、续期等功能，并通过授权推送的方式，将移动设备（智能手机）作为用户的身份认证和授权的载体，从而实现对账号登录、转账、流程审批等敏感操作的认证保护。
+        </p>
+        </div>
+
+    <section class="footer">
+    <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">
+    <div class="container">
+        <div class="foot-list row">
+            <div class="footer_up">
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_sina.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微博</h4>
+                </div>
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_weechat.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微信公众号</h4>
+                </div>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt class="btn-for-modal"><a href="javascript:void(0)" class="text-color-write hover-color-white">产品体验</a> <p class="modal-to-wait modal-to-wait-l34"><span class="arrow-up"></span> 无密码体验平台上线倒计时，敬请期待</p></dt>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>产品中心</dt>
+                    <dd><a href="/products_system.html">移动数字认证系统</a></dd>
+                    <dd><a href="/products_sdk.html">移动数字认证SDK</a></dd>
+                    <dd><a href="/products_stamp.html">电子签章</a></dd>
+                    <dd><a href="/products_num.html">数字签名服务器</a></dd>
+                    <dd><a href="/products_time.html">时间戳服务器</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>解决方案</dt>
+                    <dd><a href="/solution_gvn.html">电子政务解决方案</a></dd>
+                    <dd><a href="/solution_medical.html">电子医疗解决方案</a></dd>
+                    <dd><a href="/solution_enterprise.html">企业集团解决方案</a></dd>
+                    <dd><a href="/solution_education.html">高校解决方案</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>关于我们</dt>
+                    <dd><a href="/about_summary.html">公司简介</a></dd>
+                    <dd><a href="/news">企业动态</a></dd>
+                    <dd><a href="/about_qualify.html">荣誉资质</a></dd>
+                    <dd><a href="/about_hr.html">招兵买马</a></dd>
+                    <dd><a href="/about_contact.html">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <div class="fidoleft col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <img class="imr-6" src="/assets/images/index/footer1.png" alt="Fido" title="Fido">
+                    <img class="imr-20" src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="国密生产销售资格" title="国密生产销售资格">
+                </div>
+                <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <p>©2017 广州翼道网络科技有限公司 版权所有 </p>
+                    <p>粤ICP备13038482号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    //回到顶部
+    $(function(){
+        var winH = $(window).height();
+
+        $(window).scroll(function(e) {
+            var winT = $(window).scrollTop();
+            if(winT>winH){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        });
+
+        $('.totop').click(function(e) {
+            $('html,body').animate({scrollTop:0})
+        });
+
+    })
+
+
+</script>
+
+
+  </body>
+
+</html>

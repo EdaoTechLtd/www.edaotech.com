@@ -1,0 +1,10 @@
+{
+  "name": "validator",
+  "main": "validator.js",
+  "version": "0.0.5",
+  "authors": [
+    "Cameron Stitt <cameron@castitt.com>"
+  ],
+  "description": "Easy JavaScript form validation.",
+  "license": "MIT"
+}

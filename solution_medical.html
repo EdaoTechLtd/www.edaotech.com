@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+
+    <!--[if lte gt 9]>
+<![endif]-->
+<!--common-browser导航-->
+<nav class="navbar navbar-default navbar-fixed-top re-navbar-default">
+    <div class="top container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/common/edao_logo.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="/index.html">首页</a></li>
+                <li class="btn-for-modal"><a  href="javascript:void(0)">产品体验</a>
+                    <p class="modal-to-wait"><span class="arrow-up"></span>无密码体验平台上线倒计时，敬请期待</p>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/products_system.html">移动数字认证系统</a></li>
+                        <li><a href="/products_sdk.html">移动数字认证SDK</a></li>
+                        <li><a href="/products_stamp.html">电子签章</a></li>
+                        <li><a href="/products_num.html">数字签名服务器</a></li>
+                        <li><a href="/products_time.html">时间戳服务器</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/solution_gvn.html">电子政务解决方案</a></li>
+                        <li><a href="/solution_medical.html">电子医疗解决方案</a></li>
+                        <li><a href="/solution_enterprise.html">企业集团解决方案</a></li>
+                        <li><a href="/solution_education.html">高校解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于翼道<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/about_summary.html">公司简介</a></li>
+                        <li><a href="/news">企业动态</a></li>
+                        <li><a href="/about_qualify.html">荣誉资质</a></li>
+                        <li><a href="/about_hr.html">招兵买马</a></li>
+                        <li><a href="/about_contact.html">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <section class="page-main">
+        <div class="page-banner" id="pageBanner">
+            <div class="container padding-t60 bg_page2">
+                <h2>翼道数字安全认证解决方案</h2>
+                <div class="tit_line"></div>
+                <p>帮您解决各种安全难题，为业务保驾护航</p>
+            </div>
+            <canvas class="col-lg-12 col-md-12 col-xs-12"></canvas>
+        </div>
+    </section>
+<!--js for this page-->
+<script src="/assets/js/ban.js"></script>
+<script src="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    //设置可控风险向上滑出
+    var m_st, m_po = 400;
+    $(window).bind("scroll", function(){
+        m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+        if (m_st > m_po)
+        {
+            $('.set-login-style-img').css("visibility","inherit");
+            $('.set-login-style-img').addClass('a-bounceinB');
+        }else{
+            $('.set-login-style-img').removeClass('a-bounceinB');
+        }
+    });
+
+    //特点滑动
+    var owl = $("#owl-demo");
+    owl.owlCarousel({
+        items : 6, //10 items above 1000px browser width
+        itemsDesktop : [1000,6], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900,6], // betweem 900px and 601px
+        itemsTablet: [600,2], //2 items between 600 and 0
+        itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+    });
+</script>
+
+    <!--产品中心-->
+<div class="container padding-t60 padding-b60 smallfontcircle">
+    <div>
+        <h1 class="linerighth1"><span style="text-indent: -.5em">【电子医疗解决方案】</span></h1>
+        <p class="lh28px border_pure taj pre_words"><span class="myh4">需求和背景</span>大部分医疗系统安全级别低，容易遭恶意访问、攻击，被盗取、修改内部文件和信息；医疗职工安全意识薄弱，容易泄露账号密码，让不法分子有机可乘，窃取内部文件和数据；而且，对于信息管理员来说，医疗系统多，管理员维护难度大，要求员工定期更换密码，造成混扰；账号相关的医疗信息安全事件频发，身份认证已经成为了医疗系统安全防护的重中之重。一旦用户身份被仿冒，意味着所有的一切都会对仿冒者不在设防，会发生非常大的安全风险。
+        </p>
+    </div>
+    <img src="assets/images/edaoikey/medical1.png" alt="电子医疗信息安全解决方案 | 翼道" class="center-block col-lg-12 col-md-12 col-xs-12 illustruation">
+    <div class="clearfix"></div>
+    <hr>
+    <h2 class="t20b10">办公管理系统</h2>
+    <p class="border_pure lh28px fatherct lessimportant"><span class="centertop">【现状】</span>很多医院为提高工作效率，辅助医院管理，已经建立了自身的OA、财务、门诊、病案、药房等医疗管理系统，也建立了综合办公管理系统，系统目前基本都是采用账号/密码的登录方式。由于账号密码是弱口令认证方式，对办公管理系统防护能力不足，极易被他人盗用，容易产生重要文档和信息泄密风险。定期更改密码的方式难以有效监管，而且密码修改次数过多，容易造成混乱，给医院职工带来困扰。</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>“一号登录”：采用翼道移动安全身份认证，医院职工只要记住一个账号，无需密码，即可一号通行；</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>大幅度提升医院办公系统的账号安全等级，防止泄密风险；</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>提供更佳的用户体验，方便医院职工使用；</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>不要再记住密码，彻底去除密码所带来的困扰。</p>
+    <hr>
+    <h2 class="t20b10">HIS(医疗信息系统)</h2>
+    <p class="border_pure lh28px taj fatherct"><span class="centertop">【现状】</span><pan class="lessimportant">医院建立的电子病历、医学影像、病案管理等等应用系统，涉及大量患者的病患信息，非常敏感，这些系统常见的登录方式除了账号密码体系，还有硬件Ukey的方式。但是，硬件Ukey的采购、维护成本高、容易损坏、用户需要 驱动安装、浏览器插件才可使用，非常恼人。</pan></p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>采用翼道移动身份认证安全认证，可以大幅度提供账号安全级别，防止泄密</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>大幅度减少传统认证方式的购买、管理和维护成本</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>医院职工可以体验到安全便捷的认证方式，避免携带硬件的烦恼</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>可以有效追溯医患责任问题，减少医患纠纷，提升服务质量</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>可以与电子签章系统相结合，提高效率，减少纠纷</p>
+    <hr>
+    <h2 class="t20b10">护士巡房系统</h2>
+    <p class="border_pure lh28px taj fatherct"><span class="centertop">【现状】</span><pan class="lessimportant">为医疗系统全程电子化，部分医院已经开始上线护士巡房系统，为各科室护士站配备公用PAD，替代纸质的巡房记录。系统的登录方式也是账号/密码+硬件Ukey的方式。除了传统账号密码认证，传统硬件Ukey只有USB接口，在PAD、手机等移动客户端无法使用。</pan></p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>采用翼道移动身份认证安全认证，通过手机作为替代硬件Ukey的认证介质，满足巡房系统的场景需要，可以与护士巡房系统的电子签章无缝衔接</p>
+    <p class="taj lessimportant indent1em"><i class="fa fa-circle-o-notch blue_color fa-x imr-6" aria-hidden="true"></i>降低医院硬件的采购成本和后期硬件更换、管理的维护成本，提高应用系统的安全等级。</p>
+</div>
+
+
+    <section class="footer">
+    <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">
+    <div class="container">
+        <div class="foot-list row">
+            <div class="footer_up">
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_sina.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微博</h4>
+                </div>
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_weechat.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微信公众号</h4>
+                </div>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt class="btn-for-modal"><a href="javascript:void(0)" class="text-color-write hover-color-white">产品体验</a> <p class="modal-to-wait modal-to-wait-l34"><span class="arrow-up"></span> 无密码体验平台上线倒计时，敬请期待</p></dt>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>产品中心</dt>
+                    <dd><a href="/products_system.html">移动数字认证系统</a></dd>
+                    <dd><a href="/products_sdk.html">移动数字认证SDK</a></dd>
+                    <dd><a href="/products_stamp.html">电子签章</a></dd>
+                    <dd><a href="/products_num.html">数字签名服务器</a></dd>
+                    <dd><a href="/products_time.html">时间戳服务器</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>解决方案</dt>
+                    <dd><a href="/solution_gvn.html">电子政务解决方案</a></dd>
+                    <dd><a href="/solution_medical.html">电子医疗解决方案</a></dd>
+                    <dd><a href="/solution_enterprise.html">企业集团解决方案</a></dd>
+                    <dd><a href="/solution_education.html">高校解决方案</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>关于我们</dt>
+                    <dd><a href="/about_summary.html">公司简介</a></dd>
+                    <dd><a href="/news">企业动态</a></dd>
+                    <dd><a href="/about_qualify.html">荣誉资质</a></dd>
+                    <dd><a href="/about_hr.html">招兵买马</a></dd>
+                    <dd><a href="/about_contact.html">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <div class="fidoleft col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <img class="imr-6" src="/assets/images/index/footer1.png" alt="Fido" title="Fido">
+                    <img class="imr-20" src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="国密生产销售资格" title="国密生产销售资格">
+                </div>
+                <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <p>©2017 广州翼道网络科技有限公司 版权所有 </p>
+                    <p>粤ICP备13038482号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    //回到顶部
+    $(function(){
+        var winH = $(window).height();
+
+        $(window).scroll(function(e) {
+            var winT = $(window).scrollTop();
+            if(winT>winH){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        });
+
+        $('.totop').click(function(e) {
+            $('html,body').animate({scrollTop:0})
+        });
+
+    })
+
+
+</script>
+
+
+  </body>
+
+</html>

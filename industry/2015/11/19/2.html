@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+
+    <!--[if lte gt 9]>
+<![endif]-->
+<!--common-browser导航-->
+<nav class="navbar navbar-default navbar-fixed-top re-navbar-default">
+    <div class="top container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/common/edao_logo.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="/index.html">首页</a></li>
+                <li class="btn-for-modal"><a  href="javascript:void(0)">产品体验</a>
+                    <p class="modal-to-wait"><span class="arrow-up"></span>无密码体验平台上线倒计时，敬请期待</p>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/products_system.html">移动数字认证系统</a></li>
+                        <li><a href="/products_sdk.html">移动数字认证SDK</a></li>
+                        <li><a href="/products_stamp.html">电子签章</a></li>
+                        <li><a href="/products_num.html">数字签名服务器</a></li>
+                        <li><a href="/products_time.html">时间戳服务器</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/solution_gvn.html">电子政务解决方案</a></li>
+                        <li><a href="/solution_medical.html">电子医疗解决方案</a></li>
+                        <li><a href="/solution_enterprise.html">企业集团解决方案</a></li>
+                        <li><a href="/solution_education.html">高校解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于翼道<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/about_summary.html">公司简介</a></li>
+                        <li><a href="/news">企业动态</a></li>
+                        <li><a href="/about_qualify.html">荣誉资质</a></li>
+                        <li><a href="/about_hr.html">招兵买马</a></li>
+                        <li><a href="/about_contact.html">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+    <section>
+    <div id="postPage">
+        <div class="container">
+            <div class="post-header">
+                <h2 class="post-title">颠覆互联网+时代，翼道网络受邀参加2015全球移动互联网CEO峰会</h2>
+                <div class="text-center">
+                    <span class="post-time">2015年11月19日</span>
+
+                    <!-- Baidu Button BEGIN -->
+                    <div class="bdsharebuttonbox">
+                        分享至：
+                        <a href="#" class="bds_tsina fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a>
+                        <a href="#" class="bds_sqq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a>
+                        <a href="#" class="bds_twi fa fa-twitter" data-cmd="twi" title="分享到Twitter"></a>
+                        <a href="#" class="bds_fbook fa fa-facebook" data-cmd="fbook" title="分享到Facebook"></a>
+                    </div>
+                    <script>
+                        window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "翼道动态",
+                                "bdMini": "1",
+                                "bdMiniList": ["qzone", "tsina", "weixin", "sqq", "fbook", "twi"],
+                                "bdPic": "http://mo3de.mo3.line2.uemo.net/templates/upload/27/201511/1447835804350.png",
+                                "bdStyle": "2",
+                                "bdSize": "32"
+                            }, "share": {}
+                        };
+                        with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                    <!-- Baidu Button END -->
+                </div>
+            </div>
+            <div class="post-conter">
+                <p>2015年11月17-18日，”2015全球移动互联网CEO峰会”在广州琶洲保利博览馆盛大开幕，峰会以“互联网+，颠覆还是被颠覆?”为主题，著名企业领导人、行业领袖、国内外专家学者共同探讨传统企业“互联网+”转型、发展方向、大数据时代应用等热门话题，受到相关行业的广泛关注。</p>
+
+<!--more-->
+
+<p>翼道网络作为全球首个实现“无密码安全认证”的移动应用，专注提供移动数字认证技术研发及运营的信息安全服务。此次，翼道网络创新研发的”翼道ikey”亮相CEO峰会，助力传统企业互联网+转型，为企业发展和转型过程中提供身份认证和全方位数据分析服务，开辟了新的思路和方向。</p>
+
+<p>随着互联网大数据趋势，近年来盗号手法令人防不胜防，各种撞库也层出不穷。单纯依靠密码已不可能100%保障账号的安全性。翼道网络CEO何展强表示，保证用户个人信息安全是在大数据时代继续发展的前提条件，账户被盗、资料丢失、隐私被敲诈等等问题，让我们意识到，必须从国家、行业企业和用户等各个层面来应对大数据环境中社交网络出现的问题，以发挥大数据在企业创新、服务用户上的优势。然而保障互联网大数据时代的信息安全，就必须彻底打破传统“账号+密码”的方式，结合移动设备信息推送和证书授权的登录方式，统一各大平台，把全新的安全认证技术思路落实到企业平台和现实生活中。通过独立的第三方认证中心，让企业和个人用户得到快速、安全的认证服务，在账号登录、核心信息修改、转账等重要环节上解决过去的密码繁琐难记、木马钓鱼、拖库撞库等老大难问题。</p>
+
+<p>目前，翼道已构建好全新一代的移动数字认证平台，并且颠覆性地实现了“无密码安全认证”。在国内市场上，翼道已为近百家政府部门、医疗健康、航空高校、互联网电商提供产品及服务，并得到一致好评。</p>
+
+<p>对于未来的发展，翼道网络将构建与全球互联网平行的保护网，为更多互联网企业、传统企业提供融合数据保护与帐号管理服务，解决“安全性”和“便捷性”不可兼得的问题，实现一场革命性的创新。</p>
+
+<p style="text-indent: 0;">
+	<img src="/assets/uploads/2015/2015-11-19-2/2015-11-19-1.jpg" alt="" />
+</p>
+<p>（翼道工作人员向用户展示产品体验）</p>
+
+<p style="text-indent: 0;">
+	<img src="/assets/uploads/2015/2015-11-19-2/2015-11-19-1.jpg" alt="" />
+</p>
+<p>（翼道工作人员向与会嘉宾作产品讲解）</p>
+
+                <a href="javascript:history.go(-1);" class="btn btn-lg btn-news-back">返回</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <section class="footer">
+    <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">
+    <div class="container">
+        <div class="foot-list row">
+            <div class="footer_up">
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_sina.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微博</h4>
+                </div>
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_weechat.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微信公众号</h4>
+                </div>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt class="btn-for-modal"><a href="javascript:void(0)" class="text-color-write hover-color-white">产品体验</a> <p class="modal-to-wait modal-to-wait-l34"><span class="arrow-up"></span> 无密码体验平台上线倒计时，敬请期待</p></dt>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>产品中心</dt>
+                    <dd><a href="/products_system.html">移动数字认证系统</a></dd>
+                    <dd><a href="/products_sdk.html">移动数字认证SDK</a></dd>
+                    <dd><a href="/products_stamp.html">电子签章</a></dd>
+                    <dd><a href="/products_num.html">数字签名服务器</a></dd>
+                    <dd><a href="/products_time.html">时间戳服务器</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>解决方案</dt>
+                    <dd><a href="/solution_gvn.html">电子政务解决方案</a></dd>
+                    <dd><a href="/solution_medical.html">电子医疗解决方案</a></dd>
+                    <dd><a href="/solution_enterprise.html">企业集团解决方案</a></dd>
+                    <dd><a href="/solution_education.html">高校解决方案</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>关于我们</dt>
+                    <dd><a href="/about_summary.html">公司简介</a></dd>
+                    <dd><a href="/news">企业动态</a></dd>
+                    <dd><a href="/about_qualify.html">荣誉资质</a></dd>
+                    <dd><a href="/about_hr.html">招兵买马</a></dd>
+                    <dd><a href="/about_contact.html">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <div class="fidoleft col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <img class="imr-6" src="/assets/images/index/footer1.png" alt="Fido" title="Fido">
+                    <img class="imr-20" src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="国密生产销售资格" title="国密生产销售资格">
+                </div>
+                <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <p>©2017 广州翼道网络科技有限公司 版权所有 </p>
+                    <p>粤ICP备13038482号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    //回到顶部
+    $(function(){
+        var winH = $(window).height();
+
+        $(window).scroll(function(e) {
+            var winT = $(window).scrollTop();
+            if(winT>winH){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        });
+
+        $('.totop').click(function(e) {
+            $('html,body').animate({scrollTop:0})
+        });
+
+    })
+
+
+</script>
+
+
+  </body>
+
+</html>

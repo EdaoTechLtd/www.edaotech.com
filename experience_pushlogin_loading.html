@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+  <div class="container">
+    <div class="exper_mocheckleft">
+        <img src="/assets/images/experience/mbcheck.png" class="img-responsive col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="loading_box col- col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div>
+                <img src="/assets/images/experience/loading.gif">
+            </div>
+            <p>
+                请在手机上点击同意授权完成无密码推送登录 ... ...
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script type="text/javascript" src="/assets/js/auth.js"></script>
+<script type="text/javascript" src="/assets/js/login.js"></script>
+
+<script type="text/javascript">
+    doAuthUrl = "https://demo.edaotech.cn/api/doLogin";
+    authResultUrl = "https://demo.edaotech.cn/api/checkAuthResult";
+
+    authStateUrl = "https://demo.edaotech.cn/authState";
+    loginUrl = "https://demo.edaotech.cn/login";
+
+    $(document).ready(function(){
+        authBindDom();
+    });
+
+</script>
+
+
+  </body>
+
+  </html>

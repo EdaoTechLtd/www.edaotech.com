@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+
+    <!--[if lte gt 9]>
+<![endif]-->
+<!--common-browser导航-->
+<nav class="navbar navbar-default navbar-fixed-top re-navbar-default">
+    <div class="top container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/common/edao_logo.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="/index.html">首页</a></li>
+                <li class="btn-for-modal"><a  href="javascript:void(0)">产品体验</a>
+                    <p class="modal-to-wait"><span class="arrow-up"></span>无密码体验平台上线倒计时，敬请期待</p>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/products_system.html">移动数字认证系统</a></li>
+                        <li><a href="/products_sdk.html">移动数字认证SDK</a></li>
+                        <li><a href="/products_stamp.html">电子签章</a></li>
+                        <li><a href="/products_num.html">数字签名服务器</a></li>
+                        <li><a href="/products_time.html">时间戳服务器</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/solution_gvn.html">电子政务解决方案</a></li>
+                        <li><a href="/solution_medical.html">电子医疗解决方案</a></li>
+                        <li><a href="/solution_enterprise.html">企业集团解决方案</a></li>
+                        <li><a href="/solution_education.html">高校解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于翼道<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/about_summary.html">公司简介</a></li>
+                        <li><a href="/news">企业动态</a></li>
+                        <li><a href="/about_qualify.html">荣誉资质</a></li>
+                        <li><a href="/about_hr.html">招兵买马</a></li>
+                        <li><a href="/about_contact.html">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <section class="page-main">
+        <div class="page-banner" id="pageBanner">
+            <div class="container padding-t60">
+                <h2>翼道数字安全认证产品中心</h2>
+                <div class="tit_line"></div>
+                <p>完善的安全体系建设，安全可靠有保障</p>
+            </div>
+            <canvas class="col-lg-12 col-md-12 col-xs-12"></canvas>
+        </div>
+    </section>
+<!--js for this page-->
+<script src="/assets/js/ban.js"></script>
+<script src="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    //设置可控风险向上滑出
+    var m_st, m_po = 400;
+    $(window).bind("scroll", function(){
+        m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+        if (m_st > m_po)
+        {
+            $('.set-login-style-img').css("visibility","inherit");
+            $('.set-login-style-img').addClass('a-bounceinB');
+        }else{
+            $('.set-login-style-img').removeClass('a-bounceinB');
+        }
+    });
+
+    //特点滑动
+    var owl = $("#owl-demo");
+    owl.owlCarousel({
+        items : 6, //10 items above 1000px browser width
+        itemsDesktop : [1000,6], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900,6], // betweem 900px and 601px
+        itemsTablet: [600,2], //2 items between 600 and 0
+        itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+    });
+</script>
+
+    <!--产品中心-->
+
+<div class="page-info ent-page padding-t60 padding-b60">
+    <div class="container">
+        <div class="pro-item padding-t60">
+            <div class="pro-header">
+                <div class="row">
+                        <div class="pro-title haoh"><span class="pro-icon pull-left">TSS</span><h1 class="title-txt pull-left">时间戳服务器</h1></div>
+                        <p class="text-info taj">
+                            翼道时间戳服务器是以数字证书电子签名为核心，基于可信第三方授时中心提供的标准时间源，采用PKI技术，为应用系统提供精确的、数字签名的且不可抵赖的时间戳权威系统，是一款高性能、高稳定性，并且具备跨平台、易扩展和快速部署能力的软硬件集成化网络安全设备。
+                        </p>
+                        <p class="text-info taj">
+                            翼道时间戳服务器适用于网上交易、电子病历、网上审批、网上招投标、政府网上采购、ERP、OA、电子合同、网上申报和数字知识产权保护等多方面的电子政务、电子商务系统，为业务提供可信时间服务。
+                        </p>
+                    <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/edaoikey/default_products_time_603.png"  title="时间戳服务器 | 翼道"><img src="/assets/images/edaoikey/default_products_time_603.png" alt="翼道时间戳服务器" class="center-block padding-t60 img-responsive"></a>
+                    <p class="text-center">商用密码产品型号：SFJ1603 时间戳服务器（证书编号：SXH2016310号）</p>
+                </div>
+                <div class="pro-title padding-t60"><span class="title-txt">产品功能</span></div>
+                <table class="table table-bordered">
+                    <tr>
+                        <th width="20%" class="active">数字时间戳</th>
+                        <td>支持对数据制作时间戳；支持验证时间戳结果；</td>
+                    </tr>
+                    <tr>
+                        <th class="active">可信时间源</th>
+                        <td class="taj">支持通过NTP时间服务器手动或自动同步系统时间，为用户提供精确的时间数据，实现系统时间的可信；</td>
+                    </tr>
+                    <tr>
+                        <th class="active">数据库管理</th>
+                        <td class="taj">提供数据库管理功能，可对时间戳业务数据、按策略留存和自动存档；方便用户检索查询，产品提供时间戳序列号、签发时间等检索方式。</td>
+                    </tr>
+                </table>
+                    <div class="pro-title padding-t60"><span class="title-txt">产品特点</span></div>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th width="20%" class="active">标准化设计</th>
+                                <td class="taj">符合RFC3161国际时间戳标准；支持NTP/SNTP时间同步协议；PKI算法支持PKCS7/PKCS12/SM2/RSA；哈希算法支持SHA1/SM3/MD5；</td>
+                            </tr>
+                            <tr>
+                                <th class="active">简单易用</th>
+                                <td class="taj">支持多样的数据传入方式，可直接传入数据或传入数据存储的路径；</td>
+                            </tr>
+                            <tr>
+                                <th class="active">支持多平台</th>
+                                <td class="taj">支持多平台、多开发语言调用，提供JAVA、COM、C等多种类型的接口函数；</td>
+                            </tr>
+                            <tr>
+                                <th class="active">高安全性</th>
+                                <td class="taj">基于高强度的双向身份认证，确保了管理者的合法身份，专为时间戳服务器剪裁的操作系统，封闭了管理端口和业务端口以外的所有端口，加强了产品的抗攻击性。</td>
+                            </tr>
+                            </table>
+                <div class="pro-title padding-t60"><span class="title-txt">系统组成架构</span></div>
+                <p class="text-info  taj">
+                时间戳服务器为应用系统提供的API接口库，应用系统中使用接口库调用时间戳服务器提供的时间戳业务服务。系统组成如下图所示。
+                </p>
+                <div class="clearfix"></div>
+                <img src="assets/images/edaoikey/ca.png" alt="时间戳服务器系统组成 | 翼道" class="center-block padding-t60 img-responsive">
+                <div class="clearfix"></div>
+                <div class="pro-title padding-t60"><span class="title-txt">技术参数</span></div>
+                <table class="table table-bordered">
+                    <tr>
+                    <th class="active">技术参数</th>
+                    <th>标准版单服务器</th>
+                    </tr>
+                    <tr>
+                    <th class="active">标准化参数</th>
+                    <td class="taj">遵循《信息安全技术公钥基础设施-时间戳规范》（GB/T 20520-2006）；遵循RFC3161国际PKI时间戳协议；</td>
+                    </tr>
+                    <tr>
+                    <th class="active">设备高度</th>
+                    <td>2U</td>
+                    </tr>
+                    <tr>
+                    <th class="active">网络接口</th>
+                    <td>2ⅹ1000M</td>
+                    </tr>
+                    <tr>
+                    <th class="active">电源指标</th>
+                    <td>500W服务器电源</td>
+                    </tr>
+                    <tr>
+                    <th class="active">设备功耗</th>
+                    <td>150W</td>
+                    </tr>
+                    <tr>
+                    <th class="active">签发效率（RSA）</th>
+                    <td>1000次/秒</td>
+                    </tr>
+                    <tr>
+                    <th class="active">验证效率（RSA）</th>
+                    <td>1300次/秒</td>
+                    </tr>
+                    <tr>
+                    <th class="active">签发效率（SM2）</th>
+                    <td>2000次/秒</td>
+                    </tr>
+                    <tr>
+                    <th class="active">验证效率（SM2）</th>
+                    <td>1000次/秒</td>
+                    </tr>
+                    <tr>
+                    <th class="active">授时精度</th>
+                    <td>0.5-3ms（毫秒）</td>
+                    </tr>
+                    <tr>
+                    <th class="active">守时精度</th>
+                    <td>1ms（72小时）</td>
+                    </tr>
+                    <tr>
+                    <th class="active">内置恒温晶振</th>
+                    <td class="taj">日老化率5E-10，秒稳定度优于2E-11；日平均准确度优于1E-12</td>
+                    </tr>
+                    <tr>
+                    <th class="active">时间同步协议</th>
+                    <td>NTP、SNTP</td>
+                    </tr>
+                    <tr>
+                    <th class="active">支持应用平台</th>
+                    <td>Windows Server</td>
+                    </tr>
+                    <tr>
+                    <th class="active">支持应用接口</th>
+                    <td>Java、C、COM</td>
+                    </tr>
+                    <tr>
+                    <th class="active">支持算法标准</th>
+                    <td>RSA、SHA1、SM2、SM3</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section class="footer">
+    <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">
+    <div class="container">
+        <div class="foot-list row">
+            <div class="footer_up">
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_sina.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微博</h4>
+                </div>
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_weechat.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微信公众号</h4>
+                </div>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt class="btn-for-modal"><a href="javascript:void(0)" class="text-color-write hover-color-white">产品体验</a> <p class="modal-to-wait modal-to-wait-l34"><span class="arrow-up"></span> 无密码体验平台上线倒计时，敬请期待</p></dt>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>产品中心</dt>
+                    <dd><a href="/products_system.html">移动数字认证系统</a></dd>
+                    <dd><a href="/products_sdk.html">移动数字认证SDK</a></dd>
+                    <dd><a href="/products_stamp.html">电子签章</a></dd>
+                    <dd><a href="/products_num.html">数字签名服务器</a></dd>
+                    <dd><a href="/products_time.html">时间戳服务器</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>解决方案</dt>
+                    <dd><a href="/solution_gvn.html">电子政务解决方案</a></dd>
+                    <dd><a href="/solution_medical.html">电子医疗解决方案</a></dd>
+                    <dd><a href="/solution_enterprise.html">企业集团解决方案</a></dd>
+                    <dd><a href="/solution_education.html">高校解决方案</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>关于我们</dt>
+                    <dd><a href="/about_summary.html">公司简介</a></dd>
+                    <dd><a href="/news">企业动态</a></dd>
+                    <dd><a href="/about_qualify.html">荣誉资质</a></dd>
+                    <dd><a href="/about_hr.html">招兵买马</a></dd>
+                    <dd><a href="/about_contact.html">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <div class="fidoleft col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <img class="imr-6" src="/assets/images/index/footer1.png" alt="Fido" title="Fido">
+                    <img class="imr-20" src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="国密生产销售资格" title="国密生产销售资格">
+                </div>
+                <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <p>©2017 广州翼道网络科技有限公司 版权所有 </p>
+                    <p>粤ICP备13038482号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    //回到顶部
+    $(function(){
+        var winH = $(window).height();
+
+        $(window).scroll(function(e) {
+            var winT = $(window).scrollTop();
+            if(winT>winH){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        });
+
+        $('.totop').click(function(e) {
+            $('html,body').animate({scrollTop:0})
+        });
+
+    })
+
+
+</script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+<div class="container" id="wrapper">
+    <h1 class="title">推送授权</h1>
+    <p><a href="/experience_list">返回体验首页</a></p>
+    <div class="login-block block3">
+        <h2>新员工入职审批</h2>
+        <table class="gridtable">
+            <tr>
+                <th width="80">姓名：</th>
+                <td>张三</td>
+            </tr>
+            <tr>
+                <th>性别：</th>
+                <td>男</td>
+            </tr>
+            <tr>
+                <th>年龄：</th>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>电话：</th>
+                <td>123456</td>
+            </tr>
+            <tr>
+                <th>学历：</th>
+                <td>本科</td>
+            </tr>
+            <tr>
+                <th>表单流水号：</th>
+                <td>edao-1502936003</td>
+            </tr>
+        </table>
+        <span style="text-align: center;">审批人：xyc2017</span>
+        <div class="actions">
+            <a href="#" class="white" id="sign">
+                请求移动端授权
+            </a>
+        </div>
+        <p class="profile">提示：点击确认之后，在手机端进行授权操作</p>
+        <!----等待授权----->
+        <div class="loading" style="display: none;">
+            <div class="loading-gif"><img src="/assets/images/experience/loading.gif"></div>
+            <p>请在手机上确认以完成操作</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script type="text/javascript" src="/assets/js/auth.js"></script>
+<script type="text/javascript" src="/assets/js/sign.js"></script>
+
+<script type="text/javascript">
+
+    doAuthUrl = "https://demo.edaotech.cn/api/doSign";
+    authResultUrl = "https://demo.edaotech.cn/api/checkAuthResult";
+    authSuccWithDataUrl = "https://demo.edaotech.cn/authSuccWithData";
+
+    authStateUrl = "https://demo.edaotech.cn/authState";
+    signUrl = "https://demo.edaotech.cn/sign";
+
+    getAccountFunc = function(){
+        return "xyc2017";
+    };
+
+    doAuthPackDataFunc = function (userId, browser) {
+        return {userId:userId,
+            serialNumber: "edao-1502936003",
+            clientName:browser};
+    };
+
+    $(document).ready(function(){
+        authBindDom();
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "edao ikey website",
+  "authors": [
+    "xuyc@edaotech.com"
+  ],
+  "description": "edao ikey website via jekyll",
+  "main": "",
+  "license": "LGPL",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.11.3",
+    "bootstrap": "boostrap#^3.3.7",
+    "font-awesome": "^4.7.0",
+    "owl-carousel": "^1.3.2",
+    "validator": "^0.0.5",
+    "respond": "^1.4.2",
+    "html5shiv":"^3.7.3",
+    "animate.css":"^3.5.1",
+    "jQuery-Mobile.touch":"",
+    "slick-carousel": "1.6.0"
+  }
+}

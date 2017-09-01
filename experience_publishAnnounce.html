@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+<!-- Wrapper-->
+<div class="container" id="wrapper">
+    <h1 class="title">推送公告</h1>
+    <p><a href="/experience_list.html">返回首页</a></p>
+    <div class="login-block block6">
+        <h2>输入公告内容</h2>
+        <input name="account" class="account-input" type="text" style="display:none"
+               value="xyc2017"
+        >
+        <textarea rows="4" class="textarea-box" id="announce" autofocus></textarea>
+        <div class="actions">
+            <a href="#" class="white" id="publishAnnounce">
+                确认
+            </a>
+        </div>
+        <p class="profile">提示：点击确认之后，推送到手机端公告栏</p>
+        <!----等待授权----->
+        <div class="loading" style="display: none;">
+            <div class="loading-gif"><img src="/assets/images/experience/loading.gif"></div>
+            <p>请在手机上确认以完成操作</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/publishAnnounce.js"></script>
+<script type="text/javascript">
+
+    publishAnnounceUrl = "https://demo.edaotech.cn/publishAnnounce";
+    authStateUrl = "https://demo.edaotech.cn/authState";
+    publishAnnounceSuccUrl = "https://demo.edaotech.cn/publishAnnounceSucc";
+    doPublishAnnounceUrl = "https://demo.edaotech.cn/api/doPublishAnnounce";
+
+    $(document).ready(function(){
+        $("#publishAnnounce").bind("click",function(){
+            doPublishAnnounce();
+        });
+    });
+</script>
+
+</body>
+</html>

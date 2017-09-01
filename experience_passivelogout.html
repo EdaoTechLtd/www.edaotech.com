@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+<div class="container" id="wrapper">
+    <h1 class="title">账号登出</h1>
+    <p><a href="/experience_list.html">返回首页</a></p>
+    <div class="login-block block-logout">
+        <!----提示已登录状态,显示3秒隐藏----->
+        <div class="login-tips" style="display: none;">
+            <img src="/assets/images/experience/deal.png">
+            <h3>登录成功</h3>
+            <p>亲爱的用户，欢迎回来。</p>
+        </div>
+        <h2>请按提示进行登出设置</h2>
+        <div class="logout-tips">
+            <span><img src="/assets/images/experience/logout-tips1.png"></span>
+            <span><img src="/assets/images/experience/logout-tips2.png"></span>
+            <span><img src="/assets/images/experience/logout-tips3.png"></span>
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script type="text/javascript">
+
+    var account = "xyc2017";
+
+    function checkAccountStatus(){
+
+        $.ajax({
+            type: "POST",
+            url: "https://demo.edaotech.cn/api/checkAccountStatus",
+            data: {account:account},
+            success: function (data) {
+                if(data==null || data==undefined) return;
+                if(data.errorCode != 0) return;
+
+                if(data.status == 'logout') {
+                    window.location.href = "https://demo.edaotech.cn/logoutOK";
+                }
+            },
+            error: function () {
+            },
+            complete: function () {
+                console.log("set timeout");
+                setTimeout(checkAccountStatus, 1000);
+            }
+        });
+
+    }
+
+    $(document).ready(function(){
+        checkAccountStatus();
+    });
+
+</script>
+
+</body>
+</html>
