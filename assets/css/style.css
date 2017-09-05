@@ -273,6 +273,7 @@ form .account-input[type="text"] {
 }
 .copyright {
 	padding: 20px 0;
+	color: #b8b9bb;
 }
 .footer_up  img {
 	width: 100px;
@@ -434,14 +435,17 @@ form .account-input[type="text"] {
 	height: 100%;
 	border-radius: 3px;
 }
+@media ( max-width: 1170px) {
+	.product_detail{
+		background-image: none;
+	}
+}
 .product_detail_box:hover .product_detail{
 	transition: all 0.3s;
 	top:0;
 }
 .product_detail a{
-	position: relative;
-	top: 20px;
-	padding: 0 6px;
+	padding: 6px;
 	display: block;
 	width: 100%;
 	height: auto;
