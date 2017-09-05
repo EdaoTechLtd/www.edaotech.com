@@ -280,12 +280,25 @@ form .account-input[type="text"] {
 	height: auto;
 }
 .totop{ position: fixed; right: 50px; bottom:50px; display:none;cursor: pointer;z-index:9999999}
-
+@media screen and (max-width: 768px){
+	.fidoleft{
+		text-align :left!important;
+		margin-bottom: 6px!important;
+	}
+	.totop{
+		right: 20px;
+		bottom: 20px;
+		width: 40px;
+		height: auto;
+	}
+}
 /** qualifications **/
 
 .qualifications h3 {
 	font-size: 24px;
 	padding-bottom: 20px;
+	width: 30px;
+	height: auto;
 }
 
 .qualifications a {
@@ -518,6 +531,9 @@ a.product_center_pic {
 #banner {
 	background: #070716;
 }
+.smalltohide{
+
+}
 
 .re-carousel-indicators li {
 	width: 22px!important;
@@ -558,7 +574,6 @@ a.product_center_pic {
 	background-position: top center;
 	background-size: cover;
 }
-
 @media ( max-width: 768px) {
 	/*产品体验*/
 	.xs-display_form {
@@ -578,13 +593,23 @@ a.product_center_pic {
 	#banner {
 		margin-top: 50px;
 	}
-	element.style {}
+
 	.re-navbar-default {
 		background: rgb(22, 45, 70) !important;
 		background: rgba(22, 45, 70, .6) !important;
 	}
 }
-
+.small-screen{
+	display: none!important;
+}
+@media screen and (max-width: 1170px) {
+	.small-screen{
+		display: block!important;
+	}
+	.big-screen,.carousel-control{
+		display: none!important;
+	}
+}
 .link_bluef_btn {
 	padding: 8px 48px;
 	font-size: 18px;
@@ -594,7 +619,6 @@ a.product_center_pic {
 	display: inline-block;
 	color: #FFF;
 }
-
 .link_bluef_btn:hover {
 	background: #008AFF;
 	border-color: #008AFF;
@@ -604,21 +628,16 @@ a.product_center_pic {
 	transition: background-color 0.3s linear;
 	cursor: pointer;
 }
-
-
-
 .solution_plan {
 	background-color: #f1f1f4;
 	padding: 40px 0 40px;
 }
-
 .intem_plan {
 	cursor: pointer;
 	background: #f1f1f4;
 	padding: 15px;
 	font-size: 20px;
 }
-
 .img_up {
 	position: relative;
 	overflow: hidden;
@@ -656,7 +675,6 @@ a.product_center_pic {
 	}
 
 }
-
 .detail_subcript a {
 	color: #fff;
 }
@@ -1828,7 +1846,7 @@ h1 {
 .navbar-toggle {
 	margin-right: 15px;
 	margin-bottom: 8px;
-	background-color: #008aff!important;
+	background-color: rgba(0, 24, 51, 0)!important;
 }
 .sigin-nav button {
 	margin-left: 15px;
@@ -1852,8 +1870,8 @@ h1 {
 }
 @media (max-width: 767px) {
 	.re-navbar-default {
-		background: rgb(0, 128, 255) !important;
-		background: rgba(0, 128, 255, 0.8) !important;
+		background: rgb(0, 24, 51) !important;
+		background: rgba(0, 24, 51, 0.3) !important;
 	}
 }
 
