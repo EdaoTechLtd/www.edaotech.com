@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>翼道网络技术有限公司</title>
-    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://127.0.0.1:4000/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://localhost:4000/feed.xml">
     <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
     <!--css-->
     <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
@@ -118,6 +118,12 @@
         </div>
     </div>
 </nav>
+<script>
+    /*menu list hide*/
+    $(".dropdown-menu a").click(function(){
+        $('.collapse').collapse("hide")
+    })
+</script>
 
 
 
@@ -227,10 +233,10 @@
             </div>
             <div class="copyright">
                 <div class="fidoleft text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <img src="/assets/images/index/footer1.png" alt="Fido" title="Fido">
+                    <img src="/assets/images/index/footer1.png" alt="国密生产销售资格" title="国密生产销售资格">
                     <img src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
-                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
-                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="国密生产销售资格" title="国密生产销售资格">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="Fido" title="Fido">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
                 </div>
                 <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
                     <p>©2017 广州翼道网络科技有限公司 版权所有 </p>

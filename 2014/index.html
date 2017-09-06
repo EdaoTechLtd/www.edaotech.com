@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://localhost:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+
+    <!--[if lte gt 9]>
+<![endif]-->
+<!--common-browser导航-->
+<nav class="navbar navbar-default navbar-fixed-top re-navbar-default">
+    <div class="top container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/common/edao.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="/index.html">首页</a></li>
+                <li class="btn-for-modal"><a  href="javascript:void(0)">产品体验</a>
+                    <p class="modal-to-wait"><span class="arrow-up"></span>无密码体验平台上线倒计时，敬请期待</p>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/products_system.html">移动数字认证系统</a></li>
+                        <li><a href="/products_sdk.html">移动数字认证SDK</a></li>
+                        <li><a href="/products_stamp.html">电子签章</a></li>
+                        <li><a href="/products_num.html">数字签名服务器</a></li>
+                        <li><a href="/products_time.html">时间戳服务器</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/solution_gvn.html">电子政务解决方案</a></li>
+                        <li><a href="/solution_medical.html">电子医疗解决方案</a></li>
+                        <li><a href="/solution_enterprise.html">企业集团解决方案</a></li>
+                        <li><a href="/solution_education.html">高校解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于翼道<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/about_summary.html">公司简介</a></li>
+                        <li><a href="/news">企业动态</a></li>
+                        <li><a href="/about_qualify.html">荣誉资质</a></li>
+                        <li><a href="/about_hr.html">招兵买马</a></li>
+                        <li><a href="/about_contact.html">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    /*menu list hide*/
+    $(".dropdown-menu a").click(function(){
+        $('.collapse').collapse("hide")
+    })
+</script>
+
+
+
+
+
+
+
+    <section>
+
+    <div class="news-content">
+        <div class="page-banner" id="pageBanner">
+            <div class="container">
+                <div class="news-list-title">
+                    
+                    <p class="text-center"></p>
+                </div>
+            </div>
+            <canvas></canvas>
+        </div>
+        <div class="category">
+            <a href="/news/index.html">全部</a>
+            
+        </div>
+        <div id="newslist" class="a-bounceinB">
+
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/12/11/20141211.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">12-11</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道获移动应用奥斯卡拳头奖最佳工具应用奖</p>
+                            <div class="description">
+                                <p>2014年6月12-13日，由人民日报、国家发改委、工信部、文化部等单位指导，人民网和艾媒咨询集团联合主办的“2014移动互联发展大会暨第五届中国手机应用开发者大会”在北京举行。业界极具权威性与影响力的“拳头奖”颁奖盛况是本届大会的一大亮点，翼道从共600多款应用中突围而出，获得“最佳工具应用奖”。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/industry/2014/12/02/20141202.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">12-02</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">管好网络安全我国出了哪些招？</p>
+                            <div class="description">
+                                <p><strong>导读：刚刚过去的11月，是中国的互联网月。短短12天时间里，连续举办两个重要的网络活动，这在中国接入国际互联网20年来尚属首次。11月19日至21日，举办首届互联网大会，这是首次在中</strong><strong>国举办世界性的互联网盛会；11月24日，启动首个国家网络安全宣传周，这是中国首次举办大规模的民众网络安全宣传活动。</strong></p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/industry/2014/12/01/20141201.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">12-01</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">CNNIC成功举办域名安全大讲堂 建立全国域名技术支持体系</p>
+                            <div class="description">
+                                <p>2014年11月24日至30日，首届国家网络安全宣传周于北京中华世纪坛举行，由中央网信办会同中央机构编制委员会办公室、教育部、科技部、工业和信息化部、公安部、中国人民银行、新闻出版广电总局等部门主办，各省、自治区、直辖市也于同期举办相关主题活动，在全国掀起了网络安全宣传的高潮。根据宣传周系列活动“网络安全大讲堂”的统一部署，中国互联网络信息中心(CNNIC)于11月27日举办了“互联网基础资源与网络安全”专场讲座。CNNIC资深安全专家就互联网基础资源相关知识、DNS安全态势和应对策略、各省重点域名系统安全状况等主题进行了精彩演讲,向来宾们介绍了CNNIC对国内重要的域名系统进行的安全专项保障工作，并分享了CNNIC对互联网基础资源服务产业的分析与判断。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/11/28/20141128.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">11-28</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道获2014全球移动互联网卓越成就奖</p>
+                            <div class="description">
+                                <p>2014年11月22日，由广东省互联网协会主办，广东互联网大会组委会与艾媒咨询集团承办的2014广东互联网大会圆满落幕，两天大会参与人数达7.3万人次。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/10/11/20141011.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">10-11</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">网络安全新形势，翼道“无密码安全认证”受关注</p>
+                            <div class="description">
+                                <p>2014年9月24日至25日，亚太地区最大的安全盛会——中国互联网安全大会（ISC2014）在北京召开。大会由360互联网安全中心与互联网协会网络与信息安全工作委员会主办，国家计算机网络应急技术处理协调中心(CNCERT/CC)、中国信息安全测评中心、国家计算机病毒应急处理中心和中国互联网协会作为指导单位。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/09/29/20140929.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">09-29</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道网络厦门之旅</p>
+                            <div class="description">
+                                <p>本年度翼道网络Teambuilding的地点选在了小资风味十足的厦门。骄阳似火，卷着浪涛声的海风，一如我们年轻的团队，热情澎湃，勇往直前。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/media-reports/2014/09/04/20140904.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">09-04</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道荣获“2014中国信息产业创新企业”大奖</p>
+                            <div class="description">
+                                <p>8月22日，“2014中国信息安全技术大会”在北京举行。本届大会以“创建网安全绿色生态环境”为主题，继续探讨大数据集中后对安全的思考、新形势下云计算时代的安全、物联网安全的发展、移动互联网安全的可控性、信息系统整体安全保护、数据中心整体的可靠运营、智慧城市的安全与稳定等方面的解决之道。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/media-reports/2014/06/17/20140617.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">06-17</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道获移动应用奥斯卡“拳头奖”最佳工具应用奖</p>
+                            <div class="description">
+                                <p>2014年6月12-13日，由人民日报、国家发改委、工信部、文化部等单位指导，人民网和艾媒咨询集团联合主办的“2014移动互联发展大会暨第五届中国手机应用开发者大会”在北京举行。业界极具权威性与影响力的“拳头奖”颁奖盛况是本届大会的一大亮点，翼道从共600多款应用中突围而出，获得“最佳工具应用奖”。 2013年移动智能终端快速普及，“终端+应用”的模式驱动着移动互联网发展强劲，种类多样的应用服务异常活跃，要想在激烈的竞争中最后胜出，必定少不了坚持不懈地奋斗与拼搏。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/06/12/20140612.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">06-12</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道与你 共享世界杯盛典</p>
+                            <div class="description">
+                                <p>2014世界杯明天凌晨正式开始，你准备好为你心爱的球队加油了吗？</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/05/30/2014053001.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">05-30</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">邀请好友，赢红米手机！</p>
+                            <div class="description">
+                                <p>攒积分，赢取红米手机！5月29日，翼道网络在广州大学城校区举办了“翼道风暴席卷校园”系列活动，广州大学是我们的第一站，接下来我们还将在各大高校开展我们的有奖活动，请各位童鞋密切关注。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/05/30/20140530.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">05-30</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">”翼道风暴席卷校园“系列活动—大学城广大站</p>
+                            <div class="description">
+                                <p>5月29日，翼道网络“翼道风暴席卷校园”活动在广州大学大学城校区举行。本次活动除了提供了红米手机、加湿器等给力大奖，现场只要下载并注册翼道APP，或添加翼道网络的微博或微信均可获得各种新奇有趣的小玩意。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/05/22/libao.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">05-22</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道抽奖礼品—通用特效手机镜头</p>
+                            <div class="description">
+                                <p>“翼道有礼”  翼道APP抽奖专栏礼品新上架（一）Martube CLX 通用特效手机镜头。我的存在是为了让你与众不同，你的存在是为了让我有个归宿。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/05/16/gonggao.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">05-16</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">2014第三届全球移动互联网 “拳头奖”评选活动</p>
+                            <div class="description">
+                                <p>“翼道公告”   2014第三届全球移动互联网 “拳头奖”——最佳工具应用奖 ，投票火热进行中，欢迎大家送小翼“拳头” 嘻嘻~</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/04/28/libao.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">04-28</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道有礼 无叶音箱风扇</p>
+                            <div class="description">
+                                <p>“翼道有礼”  小翼从外星搜罗了一件宝物回来，现已寄存在翼道APP里面！安静的小可爱，给你安全、音乐、清凉的享受！恭候各位前来认领！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/04/23/shuafen.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">04-23</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">刷分秘诀教程</p>
+                            <div class="description">
+                                <p>“翼道教程”  怎样才能赚翼道积分？” 鉴于部分翼粉表示不清楚，小翼今天就告诉大家翼道#刷分秘诀#还可以跟着教程的步骤，随时随地，打开翼道，查询相应积分规则。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/04/22/libao.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">04-22</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道有礼-18种进口零食大礼包，花落谁家大揭晓</p>
+                            <div class="description">
+                                <p>“翼道有礼”  上期的抽奖礼品-18种进口零食大礼包，花落谁家呢？结果见下图，没有，上期没有获奖的用户不用灰心，本期大奖是更加吸引@小米盒子 还有微醺诱人的杯子哦~我们不是土豪，但我们有的是造福地球人民的心，么么哒！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/04/14/edao4gife.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">04-14</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道有礼 四月新番抽奖礼品，微醺袭来！</p>
+                            <div class="description">
+                                <p>“翼道有礼”  婀娜多姿的对杯，你见过吗？4月最新番-翼道抽奖礼品：迷你玻璃摆酒对杯，微醺诱惑，震撼来袭！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/04/02/build.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">04-02</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道网络将投资千万元，建移动安全认证云平台</p>
+                            <div class="description">
+                                <p>3月28日下午，作为广州市2014年重大项目招商推介会分会场，荔湾区举办“电子商都 网络新宠——广州市荔湾区2014年电子商务招商推介会”活动，吸引了180多家企业参会。区政协主席王慎初，区委副书记、政法委书记叶锦祥，区委常委、常务副区长刘晨辉，区人大常委会副主任胡秀珍，副区长江智涛等相关领导出席活动，活动由副区长方武明主持。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/03/24/o2o.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">03-24</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">移动电商新契机 乘风借势玩转O2O</p>
+                            <div class="description">
+                                <p>IEBE 2014(广州)国际电子商务博览会于2014年3月24日在广州琶洲中洲中心隆重开幕， 本届展会展出面积达25000㎡，参展企业300余家，专业观众逾20000名，设3大展区，6个会场，近40场活动。参展对象涵盖：知名电商平台、商城(含跨境电商)、所有第三方服务商、传统专业市场电商转型、电子商务园区、大数据应用、移动电商及O2O等。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/03/14/pailide.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">03-14</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">拍立得已送出，“外星人”等着你，更多丰厚礼品多波袭来！</p>
+                            <div class="description">
+                                <p>首先恭喜用户“Eric”微博名“小飞侠Ric”幸运儿在翼道APP抽奖活动抽中了—拍立得！感谢大家对翼道活动继续支持！没有获奖的伙伴们不用灰心，只要在各大手机应用市场搜索下载【翼道】，参加积分抽奖领大礼的活动，里面有更多惊喜等着你们喲！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/03/05/edaologin.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">03-05</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道 无密码式魔幻登录！！</p>
+                            <div class="description">
+                                <p>想体验什么是无密码式魔幻登录吗？小编诚意为大家录制了登录教程，欢迎火速收看！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/03/04/meeting.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">03-04</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">APP如何生存与运营？精英齐聚各出奇招！</p>
+                            <div class="description">
+                                <p>3月1日下午，由移动互联网高级IT俱乐部木棉会联合百灵欧拓、艾媒咨询共同举办的“微信公众号这么火，APP应如何生存?”主题沙龙在广州市第一乐章音乐吧隆重举行。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/03/03/kunming.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">03-03</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">“为昆明祈祷” 遇到恐怖袭击如何应对！</p>
+                            <div class="description">
+                                <p>“3.01”昆明火车站暴力恐怖案件，10余名统一着装的暴徒蒙面持刀在火车站广场、售票厅等处砍杀无辜群众。现场证据表明，这是一起由新疆分裂势力策划组织的严重暴力恐怖事件。惊恐过后只有心痛！愿伤者平安！谴责暴力！我们都是昆明人，一起为昆明祈祷！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/industry/2014/02/17/zhifubao.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">02-17</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">淘宝和支付宝被曝严重漏洞：无密码任意登录</p>
+                            <div class="description">
+                                <p>前一段时间，一则“支付宝关联银行卡，如果手机丢了会发生什么”的新闻引起了众多网友热议，大家对支付宝的安全性表示出极大的担心。不过，后来支付宝方面出面否认了这则新闻中所提到的可能性。虽是闹剧一场，但是网友对淘宝与支付宝安全性的担忧却可见一斑。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/industry/2014/02/14/wife.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">02-14</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">慎用公共wifi!小心隐私不见 网银被盗</p>
+                            <div class="description">
+                                <p>随着智能手机和无线网络的盛行，上网变成一件越来越方便的事情，人们可以越来越便捷地浏览到最新最快资讯，可以随时和亲人朋友进行沟通。现在在公共场合，很多人都喜欢利用便捷的wifi来上网。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/02/14/valentine.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">02-14</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">当元宵节遇上情人节，翼道送你限量礼品包！</p>
+                            <div class="description">
+                                <p>“翼道有礼”上线一个月，翼道已送出iPad mini、索尼微单等丰厚大奖，你想成为下一个幸运儿吗？下载注册翼道（http://t.cn/8kZa5m5）情人节当天，翼道积分翻倍！本期翼道抽奖拍立得一台！即日起关注@翼道网络，转发此微博并@ 你心中最爱的他/她，即有机会获得情人节礼包一份，中奖名额2名！名单由第三方平台抽出，2月18号官微公布，敬请留意！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/01/23/annual-meeting.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">01-23</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道网络年终大奖show out！</p>
+                            <div class="description">
+                                <p>亲，接近年底大家都看见琳罗满目的年会大奖，话不多说，下面是翼道网络主题年会【黑白土豪 】各种奖品，三台顶配128G IPAD MINI；一堆土豪金，是真正的谢瑞麟千足纯金、年假大奖以及 丰厚的红包！高档大气上档次有木有？！</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2014/01/10/fuyin.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">01-10</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">马大哈网民福音，账号密码不用愁</p>
+                            <div class="description">
+                                <p>自2011年中国最大程序员网站CSDN被黑客攻击导致600万会员账号泄露之后，QQ盗号、网游盗号、电商网站余额被盗等新闻层出不穷，网民人人自危。各大网站也不断弹出各类通告，让用户定期更改密码，而且建议是字母、数字、符号混合的长密码。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2014/01/03/help-to-B2C.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">01-03</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">安全加推广 助力电商的APP混搭新尝试</p>
+                            <div class="description">
+                                <p>电商火爆是今年中国互联网的一道风景，无论是马云与王健林的“一亿”之战、雷军与董明珠的“豪赌十亿”，还是“双十一”那350亿的惊人单日成交额，都描绘出电子商务一个美好的前景。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/2014/01/03/edao-ikey-ios.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">01-03</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道iOS版 正式上线！</p>
+                            <div class="description">
+                                <p>翼道iKEY的iOS正式上线，APP STORE链接页面：</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+
+        </div>
+</div>
+
+</section>
+<!---page for js--->
+<script src="/assets/plugins/ban.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $('#banner').carousel({
+            pause: true,
+            interval: false
+        });
+    });
+</script>
+
+
+
+    <section class="footer">
+    <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">
+    <div class="container">
+        <div class="foot-list row">
+            <div class="footer_up">
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_sina.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微博</h4>
+                </div>
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_weechat.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微信公众号</h4>
+                </div>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt class="btn-for-modal"><a href="javascript:void(0)" class="text-color-write hover-color-white">产品体验</a> <p class="modal-to-wait modal-to-wait-l34"><span class="arrow-up"></span> 无密码体验平台上线倒计时，敬请期待</p></dt>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>产品中心</dt>
+                    <dd><a href="/products_system.html">移动数字认证系统</a></dd>
+                    <dd><a href="/products_sdk.html">移动数字认证SDK</a></dd>
+                    <dd><a href="/products_stamp.html">电子签章</a></dd>
+                    <dd><a href="/products_num.html">数字签名服务器</a></dd>
+                    <dd><a href="/products_time.html">时间戳服务器</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>解决方案</dt>
+                    <dd><a href="/solution_gvn.html">电子政务解决方案</a></dd>
+                    <dd><a href="/solution_medical.html">电子医疗解决方案</a></dd>
+                    <dd><a href="/solution_enterprise.html">企业集团解决方案</a></dd>
+                    <dd><a href="/solution_education.html">高校解决方案</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>关于我们</dt>
+                    <dd><a href="/about_summary.html">公司简介</a></dd>
+                    <dd><a href="/news">企业动态</a></dd>
+                    <dd><a href="/about_qualify.html">荣誉资质</a></dd>
+                    <dd><a href="/about_hr.html">招兵买马</a></dd>
+                    <dd><a href="/about_contact.html">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <div class="fidoleft text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <img src="/assets/images/index/footer1.png" alt="国密生产销售资格" title="国密生产销售资格">
+                    <img src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="Fido" title="Fido">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
+                </div>
+                <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <p>©2017 广州翼道网络科技有限公司 版权所有 </p>
+                    <p>粤ICP备13038482号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    //回到顶部
+    $(function(){
+        var winH = $(window).height();
+
+        $(window).scroll(function(e) {
+            var winT = $(window).scrollTop();
+            if(winT>winH){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        });
+
+        $('.totop').click(function(e) {
+            $('html,body').animate({scrollTop:0})
+        });
+
+    })
+
+
+</script>
+
+
+  </body>
+
+</html>

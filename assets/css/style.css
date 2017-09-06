@@ -453,9 +453,12 @@ form .account-input[type="text"] {
 		background-image: none;
 	}
 }
-.product_detail_box:hover .product_detail{
-	transition: all 0.3s;
-	top:0;
+
+@media ( min-width: 1170px) {
+	.product_detail_box:hover .product_detail {
+		transition: all 0.3s;
+		top: 0;
+	}
 }
 .product_detail a{
 	padding: 6px;
@@ -1435,6 +1438,9 @@ table{
 .pro-header .pro-title {
 	margin-bottom: 30px;
 	line-height: 50px;
+}
+.pro-title{
+	padding-left: 10px;
 }
 
 h1 {

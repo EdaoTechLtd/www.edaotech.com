@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>翼道网络技术有限公司</title>
+    <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://localhost:4000/feed.xml">
+    <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
+    <!--css-->
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
+    <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
+    <![endif]-->
+    <!--common js-->
+    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/plugins/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
+    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgb(180,180,180)',
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                },
+
+                afterLoad : function() {
+                    this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
+                }
+            });
+
+        });
+    </script>
+</head>
+
+
+  <body>
+
+    <!--[if lte gt 9]>
+<![endif]-->
+<!--common-browser导航-->
+<nav class="navbar navbar-default navbar-fixed-top re-navbar-default">
+    <div class="top container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"><img src="/assets/images/common/edao.png" title="翼道" alt="翼道 - 无需密码的登录神器，让你不再受忘记密码、账号被盗、被钓鱼等问题困扰。"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="/index.html">首页</a></li>
+                <li class="btn-for-modal"><a  href="javascript:void(0)">产品体验</a>
+                    <p class="modal-to-wait"><span class="arrow-up"></span>无密码体验平台上线倒计时，敬请期待</p>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品中心<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/products_system.html">移动数字认证系统</a></li>
+                        <li><a href="/products_sdk.html">移动数字认证SDK</a></li>
+                        <li><a href="/products_stamp.html">电子签章</a></li>
+                        <li><a href="/products_num.html">数字签名服务器</a></li>
+                        <li><a href="/products_time.html">时间戳服务器</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/solution_gvn.html">电子政务解决方案</a></li>
+                        <li><a href="/solution_medical.html">电子医疗解决方案</a></li>
+                        <li><a href="/solution_enterprise.html">企业集团解决方案</a></li>
+                        <li><a href="/solution_education.html">高校解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a id="dLabel" href="javascript:void(0)" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">关于翼道<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="drop1">
+                        <li><a href="/about_summary.html">公司简介</a></li>
+                        <li><a href="/news">企业动态</a></li>
+                        <li><a href="/about_qualify.html">荣誉资质</a></li>
+                        <li><a href="/about_hr.html">招兵买马</a></li>
+                        <li><a href="/about_contact.html">联系我们</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    /*menu list hide*/
+    $(".dropdown-menu a").click(function(){
+        $('.collapse').collapse("hide")
+    })
+</script>
+
+
+
+
+
+
+
+    <section>
+
+    <div class="news-content">
+        <div class="page-banner" id="pageBanner">
+            <div class="container">
+                <div class="news-list-title">
+                    <h2 class="item_title_h2 text-center">
+
+
+    媒体报道
+</h2>
+                    <p class="text-center">media-reports</p>
+                </div>
+            </div>
+            <canvas></canvas>
+        </div>
+        <div class="category">
+            <a href="/news/index.html">全部</a>
+            
+        </div>
+        <div id="newslist" class="a-bounceinB">
+
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2017/08/18/20170818.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">08-18</p>
+                            <p class="year">2017</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">2017中国西安国际科学技术博览会盛大开幕</p>
+                            <div class="description">
+                                <p>8月18日上午，由西安市人民政府主办的“第十二届中国西安国际科学技术产业博览会”在西安曲江国际会展中心隆重举行。西安市副市长方光华与甘肃省副省长郝远、国家科技部创新发展司副司长余健及其他27位外地市参会领导出席了开幕巡馆活动。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2017/04/13/20170413.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">04-13</p>
+                            <p class="year">2017</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">数字认证技术的创新与突破——《信息安全与通信保密》月刊对我司CEO何展强的专访</p>
+                            <div class="description">
+                                <p>《信息安全与通信保密》是经国家新闻出版署批准出版的我国第一家全面介绍信息安全与通信保密的大型综合指导性技术月刊，面向国内外公开发行。2017年4月，周刊副总编辑唐莉女士莅临翼道网络，与翼道网络CEO何展强就当前网络安全形势、数字认证技术的发展趋势等话题进行了深入交流。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2016/02/27/20160227.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">02-27</p>
+                            <p class="year">2016</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">猎云网独家｜“翼道”获侨鑫创投1000万天使投资，首推无密码安全认证</p>
+                            <div class="description">
+                                <p>珠江台举办的1月1日电商节燃起了大众对网购的热情，但沉浸在“买买买”的兴奋中，网络安全往往很容易被人忽视。那实际上网络安全的问题已经暴露在生活的方方面面了，除了网络消费，网络安全还有很多问题需要我们来关注。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2015/06/30/2015-6-30.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">06-30</p>
+                            <p class="year">2015</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道网络CEO何展强就互联网网络安全问题接受大粤网采访</p>
+                            <div class="description">
+                                <!--StartFragment -->
+<p>今年的6月1日，工信部电子科学技术情报研究所发布了《我国公众网络安全意识调查报告（2015）》，数据显示超过九成网民的互联网安全意识较为淡薄。而目前政府倡导的“互联网+”大潮下，各类电子政务、电子商务、网络社交等应用已成新常态。就如何保护自己的网络信息安全此话题，翼道网络CEO何展强接受了大粤网的专题采谈。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/media-reports/2014/09/04/20140904.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">09-04</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道荣获“2014中国信息产业创新企业”大奖</p>
+                            <div class="description">
+                                <p>8月22日，“2014中国信息安全技术大会”在北京举行。本届大会以“创建网安全绿色生态环境”为主题，继续探讨大数据集中后对安全的思考、新形势下云计算时代的安全、物联网安全的发展、移动互联网安全的可控性、信息系统整体安全保护、数据中心整体的可靠运营、智慧城市的安全与稳定等方面的解决之道。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/official-dynamic/media-reports/2014/06/17/20140617.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">06-17</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">翼道获移动应用奥斯卡“拳头奖”最佳工具应用奖</p>
+                            <div class="description">
+                                <p>2014年6月12-13日，由人民日报、国家发改委、工信部、文化部等单位指导，人民网和艾媒咨询集团联合主办的“2014移动互联发展大会暨第五届中国手机应用开发者大会”在北京举行。业界极具权威性与影响力的“拳头奖”颁奖盛况是本届大会的一大亮点，翼道从共600多款应用中突围而出，获得“最佳工具应用奖”。 2013年移动智能终端快速普及，“终端+应用”的模式驱动着移动互联网发展强劲，种类多样的应用服务异常活跃，要想在激烈的竞争中最后胜出，必定少不了坚持不懈地奋斗与拼搏。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2014/01/10/fuyin.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">01-10</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">马大哈网民福音，账号密码不用愁</p>
+                            <div class="description">
+                                <p>自2011年中国最大程序员网站CSDN被黑客攻击导致600万会员账号泄露之后，QQ盗号、网游盗号、电商网站余额被盗等新闻层出不穷，网民人人自危。各大网站也不断弹出各类通告，让用户定期更改密码，而且建议是字母、数字、符号混合的长密码。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2014/01/03/help-to-B2C.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">01-03</p>
+                            <p class="year">2014</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">安全加推广 助力电商的APP混搭新尝试</p>
+                            <div class="description">
+                                <p>电商火爆是今年中国互联网的一道风景，无论是马云与王健林的“一亿”之战、雷军与董明珠的“豪赌十亿”，还是“双十一”那350亿的惊人单日成交额，都描绘出电子商务一个美好的前景。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+            <div class="newstitem">
+                <div class="newscontent">
+                    <a class="newsinfo pull-left" href="/media-reports/2013/12/31/acount-safe.html">
+                        <div class="newsdate pull-right">
+                            <p class="md">12-31</p>
+                            <p class="year">2013</p>
+                        </div>
+                        <div class="newsbody pull-left">
+                            <p class="title ellipsis">账号安全新尝试  翼道推无密码式安全登录</p>
+                            <div class="description">
+                                <p>2011年12月，中国最大程序员网站CSDN遭到黑客攻击，600万余用户信息被泄露。随之多玩游戏、天涯论坛、京东商城的用户账号密码及相关个人消息相继泄露。各大主流网站被逼挂出公告，让用户修改密码。</p>
+
+
+                            </div>
+                        </div>
+                    </a>
+                    <i class="fa fa-angle-right pull-left"></i>
+                </div>
+            </div>
+            
+            
+
+        </div>
+</div>
+
+</section>
+<!---page for js--->
+<script src="/assets/plugins/ban.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $('#banner').carousel({
+            pause: true,
+            interval: false
+        });
+    });
+</script>
+
+
+
+    <section class="footer">
+    <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">
+    <div class="container">
+        <div class="foot-list row">
+            <div class="footer_up">
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_sina.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微博</h4>
+                </div>
+                <div class="code_box col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <img src="/assets/images/common/code_weechat.png" alt="扫描关注翼道官方微博">
+                    <h4>翼道官方微信公众号</h4>
+                </div>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt class="btn-for-modal"><a href="javascript:void(0)" class="text-color-write hover-color-white">产品体验</a> <p class="modal-to-wait modal-to-wait-l34"><span class="arrow-up"></span> 无密码体验平台上线倒计时，敬请期待</p></dt>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>产品中心</dt>
+                    <dd><a href="/products_system.html">移动数字认证系统</a></dd>
+                    <dd><a href="/products_sdk.html">移动数字认证SDK</a></dd>
+                    <dd><a href="/products_stamp.html">电子签章</a></dd>
+                    <dd><a href="/products_num.html">数字签名服务器</a></dd>
+                    <dd><a href="/products_time.html">时间戳服务器</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>解决方案</dt>
+                    <dd><a href="/solution_gvn.html">电子政务解决方案</a></dd>
+                    <dd><a href="/solution_medical.html">电子医疗解决方案</a></dd>
+                    <dd><a href="/solution_enterprise.html">企业集团解决方案</a></dd>
+                    <dd><a href="/solution_education.html">高校解决方案</a></dd>
+                </dl>
+                <dl class="copy col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <dt>关于我们</dt>
+                    <dd><a href="/about_summary.html">公司简介</a></dd>
+                    <dd><a href="/news">企业动态</a></dd>
+                    <dd><a href="/about_qualify.html">荣誉资质</a></dd>
+                    <dd><a href="/about_hr.html">招兵买马</a></dd>
+                    <dd><a href="/about_contact.html">联系我们</a></dd>
+                </dl>
+            </div>
+            <div class="copyright">
+                <div class="fidoleft text-center col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <img src="/assets/images/index/footer1.png" alt="国密生产销售资格" title="国密生产销售资格">
+                    <img src="/assets/images/index/footer2.png" alt="高薪技术企业" title="高薪技术企业">
+                    <img class="imr-6" src="/assets/images/index/footer3.png" alt="Fido" title="Fido">
+                    <img class="imr-6" src="/assets/images/index/footer4.png" alt="中国智能家居产业联盟" title="中国智能家居产业联盟">
+                </div>
+                <div class="footerright col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <p>©2017 广州翼道网络科技有限公司 版权所有 </p>
+                    <p>粤ICP备13038482号</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    //回到顶部
+    $(function(){
+        var winH = $(window).height();
+
+        $(window).scroll(function(e) {
+            var winT = $(window).scrollTop();
+            if(winT>winH){
+                $('.totop').fadeIn();
+            }else{
+                $('.totop').fadeOut();
+            }
+        });
+
+        $('.totop').click(function(e) {
+            $('html,body').animate({scrollTop:0})
+        });
+
+    })
+
+
+</script>
+
+
+  </body>
+
+</html>
