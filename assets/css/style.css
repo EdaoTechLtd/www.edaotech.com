@@ -998,6 +998,9 @@ background: #fff;
 	height: auto !important;
 	overflow: inherit !important;
 }
+.bdshare-button-style0-16 a{
+	color: #999!important;
+}
 
 .bdsharebuttonbox a:hover {
 	color: #008aff !important;
@@ -1090,7 +1093,9 @@ background: #fff;
 	position: absolute;
 	bottom: 215px;
 }
-
+.hudong a{
+	margin:10px;
+}
 .con_block {
 	width: 356px;
 	height: 120px;
@@ -1102,7 +1107,23 @@ background: #fff;
 	float: left;
 	cursor: pointer;
 }
+.abtcompany{
+	font-size: 18px;
+	padding: 6px 10px;
 
+}
+.abtcompany i{
+	color: #db2033;
+}
+@media  screen and (max-width:768px) {
+	.bg-mag2{
+		height: 150px!important;
+	}
+
+}
+.beijingtext{
+	text-align: center;
+}
 .con_block img {
 	margin-top: 32px;
 }

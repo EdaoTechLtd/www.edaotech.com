@@ -9,30 +9,38 @@
     <title>翼道网络技术有限公司</title>
     <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://localhost:4000/feed.xml">
     <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
-    <!--css-->
+
+    <!--plugins css-->
     <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
     <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
     <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
     <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
-    <![endif]-->
+    <link href="/assets/plugins/fancybox/source/helpers/jquery.fancybox-buttons.css">
+    <link rel='stylesheet' href="/assets/plugins/fancybox/source/jquery.fancybox.css">
+    <link href="/assets/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css">
+
     <!--common js-->
-    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/jquery/dist/jquery.js/jquery.min.js"></script>
     <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
     <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
     <script src="/assets/plugins/respond/dest/respond.min.js"></script>
     <![endif]-->
-    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
-    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-             *  Simple image gallery. Uses default settings
-             */
 
-            $('.fancybox-buttons').fancybox({
+    <!--plugins js-->
+    <script src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="/assets/plugins/fancybox/lib/jquery.mousewheel.pack.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
                 openEffect  : 'none',
                 closeEffect : 'none',
 
@@ -57,8 +65,8 @@
                     this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
                 }
             });
+            });
 
-        });
     </script>
 </head>
 
@@ -170,47 +178,45 @@
     <!--产品中心-->
 <!-- Add fancyBox main JS and CSS files -->
 <article class="post-content">
-
 <div class="type-post">
     <div class="container">
         <div class="qualifications padding-t60 padding-b60 haoh">
             <h1 class="linerighth1"><span style="text-indent: -.5em">【所获荣誉】</span></h1>
             <p class="haoh">
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/h01.jpg"  title="最佳工具应用奖 | 翼道"><img src="/assets/images/qualifications/h01.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/h03.jpg"  title="年度最具投资价值奖 | 翼道APP"><img src="/assets/images/qualifications/h03.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/h02.jpg"  title="E-mice呼叫中心（Call Center）"><img src="/assets/images/qualifications/h02.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/h04.jpg"  title="中国网络安全与信息产业（金智奖） | 2016年度创新产品"><img src="/assets/images/qualifications/h04.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/h01.jpg"  title="最佳工具应用奖 | 翼道"><img src="/assets/images/qualifications/h01.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/h03.jpg"  title="年度最具投资价值奖 | 翼道APP"><img src="/assets/images/qualifications/h03.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/h02.jpg"  title="E-mice呼叫中心（Call Center）"><img src="/assets/images/qualifications/h02.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/h04.jpg"  title="中国网络安全与信息产业（金智奖） | 2016年度创新产品"><img src="/assets/images/qualifications/h04.jpg" /></a>
             </p>
             <h1 class="linerighth1"><span style="text-indent: -.5em">【行业资质】</span></h1>
             <p class="haoh">
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/q01.jpg"  title="高新技术企业证书"><img src="/assets/images/qualifications/q01.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/q02.jpg"  title="科学技术成果证书"><img src="/assets/images/qualifications/q02.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/q03.jpg"  title="商用密码产品型号证书 | SFJ1603(时间戳服务器)"><img src="/assets/images/qualifications/q03.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/q04.jpg"  title="商用密码产品型号证书 | SRJ1613(签名验签服务器)"><img src="/assets/images/qualifications/q04.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/q01.jpg"  title="高新技术企业证书"><img src="/assets/images/qualifications/q01.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/q02.jpg"  title="科学技术成果证书"><img src="/assets/images/qualifications/q02.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/q03.jpg"  title="商用密码产品型号证书 | SFJ1603(时间戳服务器)"><img src="/assets/images/qualifications/q03.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/q04.jpg"  title="商用密码产品型号证书 | SRJ1613(签名验签服务器)"><img src="/assets/images/qualifications/q04.jpg" /></a>
             </p>
             <h1 class="linerighth1"><span style="text-indent: -.5em">【软件著作权】</span></h1>
             <p class="haoh">
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/1.jpg"  title="E-mice呼叫中心（Call Center）"><img src="/assets/images/qualifications/1.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/2.jpg"  title="客服绩效管理系统(PMS)"><img src="/assets/images/qualifications/2.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/3.jpg"  title="翼道网络安全认证移动客户端软件"><img src="/assets/images/qualifications/3.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/4.jpg"  title="赛宝软件测试报告"><img src="/assets/images/qualifications/4.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/1.jpg"  title="E-mice呼叫中心（Call Center）"><img src="/assets/images/qualifications/1.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/2.jpg"  title="客服绩效管理系统(PMS)"><img src="/assets/images/qualifications/2.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/3.jpg"  title="翼道网络安全认证移动客户端软件"><img src="/assets/images/qualifications/3.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/4.jpg"  title="赛宝软件测试报告"><img src="/assets/images/qualifications/4.jpg" /></a>
 
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/5.jpg"  title="翼道时间戳服务器软件"><img src="/assets/images/qualifications/5.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/6.jpg"  title="翼道数字签名服务器软件"><img src="/assets/images/qualifications/6.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/7.jpg"  title="商用密码产品生产定点单位证书"><img src="/assets/images/qualifications/7.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/8.jpg"  title="翼道时间戳管理软件"><img src="/assets/images/qualifications/8.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/5.jpg"  title="翼道时间戳服务器软件"><img src="/assets/images/qualifications/5.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/6.jpg"  title="翼道数字签名服务器软件"><img src="/assets/images/qualifications/6.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/7.jpg"  title="商用密码产品生产定点单位证书"><img src="/assets/images/qualifications/7.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/8.jpg"  title="翼道时间戳管理软件"><img src="/assets/images/qualifications/8.jpg" /></a>
 
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/9.jpg"  title="翼道数字签名认证管理软件"><img src="/assets/images/qualifications/9.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/10.jpg"  title="翼道语音加密与数字签名应用中间件软件"><img src="/assets/images/qualifications/10.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/11.jpg"  title="翼道移动数字认证云服务管理系统"><img src="/assets/images/qualifications/11.jpg" /></a>
-                <a class="fancybox-buttons" data-fancybox-group="button" href="/assets/images/qualifications/12.jpg"  title="翼道医疗事务与数字签名管理软件"><img src="/assets/images/qualifications/12.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/9.jpg"  title="翼道数字签名认证管理软件"><img src="/assets/images/qualifications/9.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/10.jpg"  title="翼道语音加密与数字签名应用中间件软件"><img src="/assets/images/qualifications/10.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/11.jpg"  title="翼道移动数字认证云服务管理系统"><img src="/assets/images/qualifications/11.jpg" /></a>
+                <a class="fancybox" rel="group" href="/assets/images/qualifications/12.jpg"  title="翼道医疗事务与数字签名管理软件"><img src="/assets/images/qualifications/12.jpg" /></a>
 
             </p>
         </div>
     </div>
     <div class="clear"></div>
 </div>
-    <script type="text/javascript"  src="/assets/js/fancybox/add.js"></script>
 </article>
     <section class="footer">
     <img src="/assets/images/index/top.png" alt="回到翼道官网顶部" class="totop">

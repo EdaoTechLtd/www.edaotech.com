@@ -9,30 +9,38 @@
     <title>翼道网络技术有限公司</title>
     <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://localhost:4000/feed.xml">
     <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
-    <!--css-->
+
+    <!--plugins css-->
     <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
     <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
     <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
     <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
-    <![endif]-->
+    <link href="/assets/plugins/fancybox/source/helpers/jquery.fancybox-buttons.css">
+    <link rel='stylesheet' href="/assets/plugins/fancybox/source/jquery.fancybox.css">
+    <link href="/assets/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css">
+
     <!--common js-->
-    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/jquery/dist/jquery.js/jquery.min.js"></script>
     <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
     <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
     <script src="/assets/plugins/respond/dest/respond.min.js"></script>
     <![endif]-->
-    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
-    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-             *  Simple image gallery. Uses default settings
-             */
 
-            $('.fancybox-buttons').fancybox({
+    <!--plugins js-->
+    <script src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="/assets/plugins/fancybox/lib/jquery.mousewheel.pack.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
                 openEffect  : 'none',
                 closeEffect : 'none',
 
@@ -57,8 +65,8 @@
                     this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
                 }
             });
+            });
 
-        });
     </script>
 </head>
 
@@ -173,7 +181,7 @@
 <div class="pro-header ">
     <div class="pro-title"><span class="title-txt">招兵买马</span></div>
     <div class="job_word">
-        <p style="background: url('/assets/images/about/job_icon.jpg') 0 0 no-repeat; padding-left: 130px; padding-top: 1em; font-size: 18px;">“据说，这里的IT男结识白富美的机会高于同行63.8%；据说，这里的下午茶点品质与半岛酒店的相仿；据说，这里的妹纸集齐了CHANEL 近5年的手袋款式；据说，这个团队的购车摇号首次中签率为100%；据说，这群人都做着一个颠覆移动互联网的梦。”</p>
+        <p class="abtcompany"><i class="fa fa-quote-left fa-2x imr-6" aria-hidden="true"></i>据说，这里的IT男结识白富美的机会高于同行63.8%；据说，这里的下午茶点品质与半岛酒店的相仿；据说，这里的妹纸集齐了CHANEL 近5年的手袋款式；据说，这个团队的购车摇号首次中签率为100%；据说，这群人都做着一个颠覆移动互联网的梦。”</p>
     </div>
     <img  alt="招聘正在进行中，马上加入翼道网络技术有限公司" class="job_banner" src="/assets/images/about/job_banner.jpg">
     <div class="job-box"></div>

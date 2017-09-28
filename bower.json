@@ -24,6 +24,7 @@
     "html5shiv":"^3.7.3",
     "animate.css":"^3.5.1",
     "jQuery-Mobile.touch":"",
-    "slick-carousel": "1.6.0"
+    "slick-carousel": "1.6.0",
+    "fancybox": "^2.1.6"
   }
 }

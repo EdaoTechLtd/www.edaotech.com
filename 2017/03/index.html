@@ -9,30 +9,38 @@
     <title>翼道网络技术有限公司</title>
     <link rel="alternate" type="application/rss+xml" title="翼道网络" href="http://localhost:4000/feed.xml">
     <link type="image/x-icon" rel='icon' href="/assets/images/common/favicon.ico" />
-    <!--css-->
+
+    <!--plugins css-->
     <link rel='stylesheet' type="text/css" href="/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
     <link rel='stylesheet' type="text/css" href="/assets/css/style.css" />
     <link rel='stylesheet' type="text/css" href="/assets/plugins/animate.css/animate.min.css" />
     <link rel="stylesheet" href="/assets/plugins/font-awesome//css/font-awesome.min.css">
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
-    <![endif]-->
+    <link href="/assets/plugins/fancybox/source/helpers/jquery.fancybox-buttons.css">
+    <link rel='stylesheet' href="/assets/plugins/fancybox/source/jquery.fancybox.css">
+    <link href="/assets/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css">
+
     <!--common js-->
-    <script src="/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/plugins/jquery/dist/jquery.js/jquery.min.js"></script>
     <script src="/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" />
     <script type="text/javascript" src="/assets/plugins/html5shiv/dist/html5shiv.min.js"></script>
     <script src="/assets/plugins/respond/dest/respond.min.js"></script>
     <![endif]-->
-    <link rel='stylesheet' href="/assets/js/fancybox/jquery.fancybox.css">
-    <script src="/assets/js/fancybox/jquery.fancybox.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-             *  Simple image gallery. Uses default settings
-             */
 
-            $('.fancybox-buttons').fancybox({
+    <!--plugins js-->
+    <script src="/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script src="/assets/plugins/fancybox/lib/jquery.mousewheel.pack.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <script src="/assets/plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
                 openEffect  : 'none',
                 closeEffect : 'none',
 
@@ -57,8 +65,8 @@
                     this.title = (this.title ? this.title : '') + '<br />' + ' 第' + (this.index + 1) + ' 张' + ' / 共 '+ this.group.length + ' 张';
                 }
             });
+            });
 
-        });
     </script>
 </head>
 
